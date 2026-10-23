@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "2026-10-15-google-pres-td-synnex-prilezitost-o-ktere-rada-partneru-nevi",
+    "title": "Google přes TD SYNNEX: příležitost, o které řada partnerů neví",
+    "vendor": "Google",
+    "date": "2026-10-15",
+    "perex": "TD SYNNEX je exkluzivním distributorem Google pro CZ a SK. Workspace, Cloud, Gemini Enterprise a Security pro vaše zákazníky - s podporou od registrace.",
+    "image": "assets/images/google-pres-td-synnex.png",
+    "slug": "2026-10-15-google-pres-td-synnex-prilezitost-o-ktere-rada-partneru-nevi"
+  },
+  {
+    "id": "2026-10-14-z-microsoft-365-e3-rovnou-na-e7-proc-preskocit-e5",
+    "title": "Z Microsoft 365 E3 rovnou na E7: proč přeskočit E5",
+    "vendor": "Microsoft",
+    "date": "2026-10-14",
+    "perex": "Proč vést zákazníky z Microsoft 365 E3 rovnou na E7, ne na E5: srovnání cen, bezpečnost pro AI a agenty, Growth Margin a postup v pěti krocích.",
+    "image": "assets/images/m365-e3-na-e7.png",
+    "slug": "2026-10-14-z-microsoft-365-e3-rovnou-na-e7-proc-preskocit-e5"
+  },
+  {
+    "id": "2026-10-01-office-365-e1-a-e3-zakaznik-plati-stejne-vy-vic",
+    "title": "Office 365 E1 a E3: zákazník platí stejně, vy víc",
+    "vendor": "Microsoft",
+    "date": "2026-10-01",
+    "perex": "Od 1. října 2026 Microsoft snížil základní marži u Office 365 E1, E3 a dalších služeb z 20 % na 15 %. Zákazník platí stejně, partner vydělá méně.",
+    "image": "assets/images/office-365-marze.png",
+    "slug": "2026-10-01-office-365-e1-a-e3-zakaznik-plati-stejne-vy-vic"
+  },
+  {
+    "id": "2026-09-30-copilot-business-platba-za-spotrebu-od-1-12-2026",
+    "title": "Copilot Business: platba za spotřebu od 1. 12. 2026",
+    "vendor": "Microsoft",
+    "date": "2026-09-30",
+    "perex": "Od 1. prosince mají nové licence Copilot Business v CSP zapnutou platbu za spotřebu s limitem 4 000 kreditů na uživatele. Co to znamená pro partnery?",
+    "image": "assets/images/copilot-business-ubb.png",
+    "slug": "2026-09-30-copilot-business-platba-za-spotrebu-od-1-12-2026"
+  }
+]
