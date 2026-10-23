@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog – TD SYNNEX BU Software & Cloud</title>
+<meta name="description" content="Novinky, promoakce a tipy z oblasti Microsoft, Adobe, AWS a Google od TD SYNNEX Czech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --darkTeal:#0D4D4D;
+  --teal-deep:#082f2f;
+  --accent:#1DB87E;
+  --ink:#14201f;
+  --muted:#5d6e6c;
+  --card:#ffffff;
+  --bg:#f4f6f5;
+  --line:#e2e8e6;
+  --ms:#0078d4;   --ms-bg:#e8f2fd;
+  --adobe:#cc2200; --adobe-bg:#ffeee9;
+  --aws:#c45200;   --aws-bg:#fff1e5;
+  --google:#1a73e8; --google-bg:#e8f0fe;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+
+/* ── Hero ── */
+.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:52px 24px 88px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
+.hero-inner{max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:.04em;font-size:1rem;text-transform:uppercase;color:#fff;text-decoration:none;margin-bottom:22px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,5vw,3rem);line-height:1.08;margin-bottom:10px}
+.hero p{font-size:1.05rem;color:#cfe3df;max-width:58ch}
+
+/* ── Wrap ── */
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ── Filters ── */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:-24px;position:relative;z-index:2;padding-bottom:32px}
+.pill{border:none;border-radius:999px;padding:9px 18px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .15s,color .15s,box-shadow .15s;background:var(--card);color:var(--muted);box-shadow:0 2px 8px rgba(13,77,77,.1)}
+.pill:hover{background:#eef3f2}
+.pill.active{color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.pill.active[data-v=""]{background:var(--darkTeal)}
+.pill.active[data-v="Microsoft"]{background:var(--ms)}
+.pill.active[data-v="Adobe"]{background:var(--adobe)}
+.pill.active[data-v="AWS"]{background:var(--aws)}
+.pill.active[data-v="Google"]{background:var(--google)}
+
+/* ── Grid ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;padding-bottom:60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;text-decoration:none;color:inherit;display:flex;flex-direction:column;overflow:hidden;transition:transform .18s,box-shadow .18s,border-color .18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(13,77,77,.13);border-color:#c8ddd8}
+.card-cover{width:100%;aspect-ratio:16/9;overflow:hidden;flex-shrink:0}
+.card-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.card-cover-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.card-cover-placeholder.ms{background:linear-gradient(135deg,#0078d410,#0078d420)}
+.card-cover-placeholder.adobe{background:linear-gradient(135deg,#cc220010,#cc220020)}
+.card-cover-placeholder.aws{background:linear-gradient(135deg,#c4520010,#c4520020)}
+.card-cover-placeholder.google{background:linear-gradient(135deg,#1a73e810,#1a73e820)}
+.card-cover-placeholder svg{width:48px;height:48px;opacity:.25}
+.card-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.card-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.badge{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.badge.ms{background:var(--ms-bg);color:var(--ms)}
+.badge.adobe{background:var(--adobe-bg);color:var(--adobe)}
+.badge.aws{background:var(--aws-bg);color:var(--aws)}
+.badge.google{background:var(--google-bg);color:var(--google)}
+.card-date{font-size:.82rem;color:var(--muted)}
+.card-title{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;line-height:1.28;margin-bottom:8px}
+.card-perex{color:var(--muted);font-size:.9rem;line-height:1.5;flex:1}
+.card-read{display:inline-block;margin-top:14px;font-size:.88rem;font-weight:600;color:var(--darkTeal)}
+
+/* ── Docs link ── */
+.docs-link{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;margin-bottom:32px;transition:border-color .15s,box-shadow .15s}
+.docs-link:hover{border-color:var(--accent);box-shadow:0 4px 14px rgba(13,77,77,.1)}
+.docs-link svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+
+/* ── States ── */
+.loading,.empty{text-align:center;padding:60px 0;color:var(--muted);font-size:1rem}
+.loading::before{content:"";display:block;width:32px;height:32px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hidden{display:none!important}
+
+footer{text-align:center;padding:40px 24px 48px;color:var(--muted);font-size:.85rem}
+footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
+footer a:hover{color:var(--accent)}
+
+@media(max-width:560px){.hero{padding:40px 20px 80px}.grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a href="https://tdsynnexcz.github.io/" class="brand"><span class="dot"></span>TD SYNNEX&nbsp;CZ</a>
+    <h1>Blog</h1>
+    <p>Novinky, promoakce a tipy z oblasti Microsoft, Adobe, AWS a Google.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="filter-bar" id="filters">
+    <button class="pill active" data-v="">Vše</button>
+    <button class="pill" data-v="Microsoft">Microsoft</button>
+    <button class="pill" data-v="Adobe">Adobe</button>
+    <button class="pill" data-v="AWS">AWS</button>
+    <button class="pill" data-v="Google">Google</button>
+  </div>
+
+  <a class="docs-link" href="dokumenty/">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    Knihovna dokumentů a návodů
+  </a>
+
+  <div id="loading" class="loading"></div>
+  <div id="grid" class="grid hidden"></div>
+  <div id="empty" class="empty hidden"></div>
+</main>
+
+<footer>
+  TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a>
+</footer>
+
+<script>
+const VC = {Microsoft:'ms', Adobe:'adobe', AWS:'aws', Google:'google'};
+let all = [], filter = '';
+
+const MONTHS = ['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'];
+function fmtDate(d){const[y,m,day]=d.split('-');return`${parseInt(day)}. ${MONTHS[parseInt(m)-1]} ${y}`;}
+function vc(v){return VC[v]||''}
+
+function card(a){
+  const cls = vc(a.vendor);
+  const cover = a.image
+    ? `<img src="${a.image}" alt="" loading="lazy">`
+    : `<div class="card-cover-placeholder ${cls}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>`;
+  return `<a class="card" href="posts/${a.slug}.html">
+    <div class="card-cover">${cover}</div>
+    <div class="card-body">
+      <div class="card-meta"><span class="badge ${cls}">${a.vendor}</span><span class="card-date">${fmtDate(a.date)}</span></div>
+      <h2 class="card-title">${a.title}</h2>
+      <p class="card-perex">${a.perex}</p>
+      <span class="card-read">Číst →</span>
+    </div>
+  </a>`;
+}
+
+function render(){
+  const g = document.getElementById('grid');
+  const e = document.getElementById('empty');
+  const shown = filter ? all.filter(a=>a.vendor===filter) : all;
+  if(!shown.length){
+    g.classList.add('hidden'); e.classList.remove('hidden');
+    e.textContent = all.length ? 'Žádné články pro vybraný vendor.' : 'Zatím zde nejsou žádné články.';
+  } else {
+    g.innerHTML = shown.map(card).join(''); g.classList.remove('hidden'); e.classList.add('hidden');
+  }
+}
+
+document.querySelectorAll('.pill').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); filter=b.dataset.v; render();
+  });
+});
+
+fetch('articles.json').then(r=>r.ok?r.json():[]).catch(()=>[]).then(data=>{
+  document.getElementById('loading').classList.add('hidden');
+  all = data; render();
+});
+</script>
+</body>
+</html>
