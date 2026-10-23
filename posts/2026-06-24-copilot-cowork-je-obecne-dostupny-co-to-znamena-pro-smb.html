@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Copilot Cowork je obecně dostupný - co to znamená pro SMB – Blog TD SYNNEX CZ</title>
 <meta name="description" content="Microsoft uvolnil Copilot Cowork pro všechny. Co reálně dělá, jak se účtuje podle spotřeby a proč se týká i edice Copilot Business.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Microsoft</div>
     <h1>Copilot Cowork je obecně dostupný - co to znamená pro SMB</h1>
     <div class="meta">24. června 2026 · Microsoft uvolnil Copilot Cowork pro všechny. Co reálně dělá, jak se účtuje podle spotřeby a proč se týká i edice Copilot Business.</div>
@@ -49,11 +50,11 @@ footer a:hover{color:var(--accent)}
 </header>
 <main class="wrap">
   <div class="cover"><img src="../assets/images/cowork.png" alt="Copilot Cowork je obecně dostupný - co to znamená pro SMB"></div>
-  <article class="article"><div style="max-width:820px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#1f2733;line-height:1.65;font-size:17px;">
+  <article class="article"><div style="max-width:820px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#1F2A2B;line-height:1.65;font-size:17px;">
 
   <!-- PEREX -->
-  <div style="border-left:4px solid #0b5cab;background:#f3f7fc;padding:18px 22px;margin:0 0 28px 0;border-radius:0 6px 6px 0;">
-    <p style="margin:0;font-size:17px;color:#33414f;">Microsoft dnes oznámil obecnou dostupnost Copilot Cowork - celosvětově, pro zákazníky s licencí Microsoft 365 Copilot. Po třech měsících v preview programu Frontier jde o jednu z nejrychleji rostoucích funkcí v jeho historii. Odpusťme si ale marketingovou omáčku a podívejme se, co to znamená v praxi - a proč je to téma i pro menší zákazníky.</p>
+  <div style="border-left:4px solid #005758;background:#F0F0F0;padding:18px 22px;margin:0 0 28px 0;border-radius:0 6px 6px 0;">
+    <p style="margin:0;font-size:17px;color:#1F2A2B;">Microsoft dnes oznámil obecnou dostupnost Copilot Cowork - celosvětově, pro zákazníky s licencí Microsoft 365 Copilot. Po třech měsících v preview programu Frontier jde o jednu z nejrychleji rostoucích funkcí v jeho historii. Odpusťme si ale marketingovou omáčku a podívejme se, co to znamená v praxi - a proč je to téma i pro menší zákazníky.</p>
   </div>
 
   <!-- INTRO -->
@@ -62,7 +63,7 @@ footer a:hover{color:var(--accent)}
   <p style="margin:0 0 28px 0;">Příklady z praxe nejsou vymyšlené. Jeden tým nechal Cowork porovnat skoro čtyři tisíce souborů mezi dvěma verzemi produktu - práce na týdny, hotová během chvíle. Obchodník na něj pustil zaseknutý pipeline a dostal seřazený seznam rizikových příležitostí i s tím, kde u každé komunikace usnula. Týdenní ruční revize se scvrkla na jedno dopoledne.</p>
 
   <!-- H2 -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 14px 0;line-height:1.3;">Co Cowork dělá jinak</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 14px 0;line-height:1.3;">Co Cowork dělá jinak</h2>
   <p style="margin:0 0 16px 0;">Cowork zvládá složité, dlouho běžící úkoly napříč více nástroji zároveň. Od běžného chatbota ho odlišuje pět věcí:</p>
   <ul style="margin:0 0 28px 0;padding-left:22px;">
     <li style="margin-bottom:10px;"><strong>Běh v cloudu</strong> - soubory se neukládají lokálně a úkol běží dál, i když máte notebook vypnutý.</li>
@@ -73,49 +74,49 @@ footer a:hover{color:var(--accent)}
   </ul>
 
   <!-- H2 - SMB KEY POINT -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 14px 0;line-height:1.3;">Týká se to i menších firem</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 14px 0;line-height:1.3;">Týká se to i menších firem</h2>
   <p style="margin:0 0 28px 0;">Tady přichází to nejdůležitější pro nás. V oznámení Microsoft mluví hlavně k enterprise zákazníkům a Cowork váže na licenci Microsoft 365 Copilot. Cowork se ale netýká jen této plné edice - vztahuje se i na edici Copilot Business, tedy na novou edici určenou menším a středním firmám. To je zásadní rozdíl oproti tomu, jak je novinka prezentovaná. Znamená to, že agentní práci, kterou si během preview vyzkoušela víc než polovina firem z Fortune 500, dostane i pětičlenný tým u vašeho zákazníka.</p>
 
   <!-- TABLE -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 14px 0;line-height:1.3;">Jak do sebe vrstvy zapadají</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 14px 0;line-height:1.3;">Jak do sebe vrstvy zapadají</h2>
   <p style="margin:0 0 16px 0;">Aby bylo jasné, co zákazník potřebuje a za co platí, pomůže si to rozkreslit na tři vrstvy:</p>
   <div style="overflow-x:auto;margin:0 0 28px 0;">
     <table style="width:100%;border-collapse:collapse;font-size:15.5px;">
       <thead>
-        <tr style="background:#0b5cab;color:#ffffff;">
-          <th style="text-align:left;padding:12px 14px;border:1px solid #0b5cab;">Vrstva</th>
-          <th style="text-align:left;padding:12px 14px;border:1px solid #0b5cab;">Co to je</th>
-          <th style="text-align:left;padding:12px 14px;border:1px solid #0b5cab;">Jak se platí</th>
+        <tr style="background:#005758;color:#ffffff;">
+          <th style="text-align:left;padding:12px 14px;border:1px solid #005758;">Vrstva</th>
+          <th style="text-align:left;padding:12px 14px;border:1px solid #005758;">Co to je</th>
+          <th style="text-align:left;padding:12px 14px;border:1px solid #005758;">Jak se platí</th>
         </tr>
       </thead>
       <tbody>
         <tr style="background:#ffffff;">
-          <td style="padding:12px 14px;border:1px solid #d6dde5;font-weight:bold;">Copilot Chat</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Chat s ochranou firemních dat, součást komerčních plánů</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Zdarma s plány Business</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;font-weight:bold;">Copilot Chat</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Chat s ochranou firemních dat, součást komerčních plánů</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Zdarma s plány Business</td>
         </tr>
-        <tr style="background:#f3f7fc;">
-          <td style="padding:12px 14px;border:1px solid #d6dde5;font-weight:bold;">Microsoft 365 Copilot / Copilot Business</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Copilot ve Wordu, Excelu, Outlooku a Teams nad firemními daty</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Fixní cena za uživatele a měsíc</td>
+        <tr style="background:#F0F0F0;">
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;font-weight:bold;">Microsoft 365 Copilot / Copilot Business</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Copilot ve Wordu, Excelu, Outlooku a Teams nad firemními daty</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Fixní cena za uživatele a měsíc</td>
         </tr>
         <tr style="background:#ffffff;">
-          <td style="padding:12px 14px;border:1px solid #d6dde5;font-weight:bold;">Copilot Cowork</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Agentní systém pro složité, dlouho běžící úkoly</td>
-          <td style="padding:12px 14px;border:1px solid #d6dde5;">Podle spotřeby (Copilot Credits), navíc k licenci Copilot</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;font-weight:bold;">Copilot Cowork</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Agentní systém pro složité, dlouho běžící úkoly</td>
+          <td style="padding:12px 14px;border:1px solid #D9D8D7;">Podle spotřeby (Copilot Credits), navíc k licenci Copilot</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <!-- H3 -->
-  <h3 style="font-size:20px;color:#1f2733;margin:0 0 12px 0;line-height:1.35;">Jak se Cowork platí</h3>
+  <h3 style="font-size:20px;color:#1F2A2B;margin:0 0 12px 0;line-height:1.35;">Jak se Cowork platí</h3>
   <p style="margin:0 0 16px 0;">Cowork potřebuje licenci Microsoft 365 Copilot nebo Copilot Business. Na ni se navazuje účtování podle spotřeby v jednotkách Copilot Credits. Cena každého úkolu se počítá ze čtyř vstupů: použitý model, načtení kontextu, volání nástrojů a doba běhu.</p>
   <p style="margin:0 0 16px 0;">Microsoft rozlišuje tři typy úkolů - lehké (pár zdrojů, jednoduché uvažování, jeden výstup), střední (více zdrojů, strukturované uvažování, dva a více výstupů) a těžké (široká agregace, hluboké uvažování, řada výstupů). Z toho si lze postavit odhad nákladů podle počtu uživatelů a typů úkolů, které budou reálně řešit.</p>
   <p style="margin:0 0 28px 0;">Platit lze dvěma způsoby: PayGo (platba za skutečnou spotřebu, 0,01 USD za kredit) nebo P3 (závazek k objemu výměnou za slevu).</p>
 
   <!-- H3 -->
-  <h3 style="font-size:20px;color:#1f2733;margin:0 0 12px 0;line-height:1.35;">Co řeší správce</h3>
+  <h3 style="font-size:20px;color:#1F2A2B;margin:0 0 12px 0;line-height:1.35;">Co řeší správce</h3>
   <p style="margin:0 0 16px 0;">Protože se účtuje podle spotřeby, je řízení nákladů jednou z hlavních novinek ostré verze. Microsoft ho rozdělil do tří oblastí:</p>
   <ul style="margin:0 0 28px 0;padding-left:22px;">
     <li style="margin-bottom:10px;"><strong>Kontrola</strong> - Cowork je ve výchozím stavu vypnutý. Správce rozhoduje, kdy se zapne, kdo k němu má přístup, a nastavuje rozpočtové limity na úrovni tenantu, skupiny i jednotlivce.</li>
@@ -124,20 +125,20 @@ footer a:hover{color:var(--accent)}
   </ul>
 
   <!-- WARNING / TIP BOX -->
-  <div style="border-left:4px solid #d98200;background:#fdf6ec;padding:18px 22px;margin:0 0 30px 0;border-radius:0 6px 6px 0;">
-    <p style="margin:0 0 8px 0;font-weight:bold;color:#b56b00;">Pozor</p>
-    <p style="margin:0;color:#5a4a30;">Cowork je ve výchozím stavu vypnutý a účtuje se podle spotřeby. Než ho u zákazníka zapnete, nastavte rozpočtové limity a upozornění. Tenanti, kteří měli aspoň jednoho uživatele v programu Frontier (30. 3. - 16. 6. 2026), mají na spotřebu Cowork odklad účtování do 1. 7. 2026.</p>
+  <div style="border-left:4px solid #005758;background:#F0F0F0;padding:18px 22px;margin:0 0 30px 0;border-radius:0 6px 6px 0;">
+    <p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Pozor</p>
+    <p style="margin:0;color:#005758;">Cowork je ve výchozím stavu vypnutý a účtuje se podle spotřeby. Než ho u zákazníka zapnete, nastavte rozpočtové limity a upozornění. Tenanti, kteří měli aspoň jednoho uživatele v programu Frontier (30. 3. - 16. 6. 2026), mají na spotřebu Cowork odklad účtování do 1. 7. 2026.</p>
   </div>
 
   <!-- H2 - UPSELL -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 14px 0;line-height:1.3;">Ideální moment pro rozhovor se zákazníkem</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 14px 0;line-height:1.3;">Ideální moment pro rozhovor se zákazníkem</h2>
   <p style="margin:0 0 16px 0;">Proč to spojuju s licencemi? Protože tohle je přesně ta příležitost, na kterou se vyplatí navázat.</p>
   <p style="margin:0 0 16px 0;">Máte zákazníka na Microsoft 365 Business Standard bez Copilota? Bundle edice Business Standard s Copilotem vyjde na <strong>244,32 EUR</strong> za uživatele a rok při roční fakturaci - zhruba 20 EUR měsíčně. To je cena srovnatelná se samostatným AI předplatným, jen s tím rozdílem, že Copilot pracuje přímo ve Wordu, Excelu, Outlooku a Teams nad firemními daty - a otevírá dveře právě ke Coworku. Business Premium s Copilotem stojí <strong>332,76 EUR</strong> za uživatele a rok.</p>
   <p style="margin:0 0 16px 0;">Adopce AI roste rychleji, než to vypadá. Zákazník, který dnes "ještě počká", za půl roku zjistí, že okolí už agenty běžně používá. Nabídněte upsell včas - a nezapomeňte zákazníkovi připomenout, ať si Cowork zapne a nastaví limity.</p>
-  <p style="margin:0 0 28px 0;font-size:14px;color:#6b7785;">Uvedené ceny jsou orientační doporučené prodejní ceny pro koncového zákazníka při roční fakturaci a slouží jako vodítko.</p>
+  <p style="margin:0 0 28px 0;font-size:14px;color:#4A5556;">Uvedené ceny jsou orientační doporučené prodejní ceny pro koncového zákazníka při roční fakturaci a slouží jako vodítko.</p>
 
   <!-- FAQ -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 18px 0;line-height:1.3;">Časté dotazy</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 18px 0;line-height:1.3;">Časté dotazy</h2>
 
   <p style="margin:0 0 6px 0;font-weight:bold;">Potřebuju pro Cowork zvláštní licenci?</p>
   <p style="margin:0 0 18px 0;">Cowork běží navíc k licenci Microsoft 365 Copilot nebo Copilot Business. Samotná licence Copilot stačí k tomu, abyste ho mohli zapnout; spotřeba se pak účtuje zvlášť v kreditech.</p>
@@ -152,18 +153,18 @@ footer a:hover{color:var(--accent)}
   <p style="margin:0 0 28px 0;">V ostré verzi na modelech Anthropic (Opus 4.8 a Sonnet 4.6). Microsoft chystá vlastní model Cowork 1 optimalizovaný na cenu.</p>
 
   <!-- CONCLUSION -->
-  <h2 style="font-size:25px;color:#0b5cab;margin:0 0 14px 0;line-height:1.3;">Závěr</h2>
+  <h2 style="font-size:25px;color:#005758;margin:0 0 14px 0;line-height:1.3;">Závěr</h2>
   <p style="margin:0 0 28px 0;">Cowork není další chatovací okno. Je to krok, ve kterém se z Copilota stává spolupracovník, co práci odvede - a díky edici Copilot Business se to týká i menších zákazníků. Pro partnera je to konkrétní příležitost: posunout zákazníka z "máme Office" na "máme AI, která pracuje", a postavit to na licenci, jejíž poměr cena/výkon dnes těžko něco překoná.</p>
 
   <!-- CTA -->
-  <div style="background:#f3f7fc;border:1px solid #cfe0f2;padding:22px 24px;border-radius:8px;text-align:center;">
-    <p style="margin:0 0 6px 0;font-size:18px;font-weight:bold;color:#0b5cab;">Potřebujete poradit s nastavením?</p>
-    <p style="margin:0 0 4px 0;color:#33414f;">S výběrem správného licenčního modelu i s upsellem na bundle edice s Copilotem vám rádi pomůžeme.</p>
-    <p style="margin:0;font-size:18px;"><a href="mailto:microsoft.cz@tdsynnex.com" style="color:#0b5cab;font-weight:bold;text-decoration:none;">microsoft.cz@tdsynnex.com</a></p>
+  <div style="background:#F0F0F0;border:1px solid #D9D8D7;padding:22px 24px;border-radius:8px;text-align:left;">
+    <p style="margin:0 0 6px 0;font-size:18px;font-weight:bold;color:#005758;">Potřebujete poradit s nastavením?</p>
+    <p style="margin:0 0 4px 0;color:#1F2A2B;">S výběrem správného licenčního modelu i s upsellem na bundle edice s Copilotem vám rádi pomůžeme.</p>
+    <p style="margin:0;font-size:18px;"><a href="mailto:microsoft.cz@tdsynnex.com" style="color:#005758;font-weight:bold;text-decoration:none;">microsoft.cz@tdsynnex.com</a></p>
   </div>
 
 </div></article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>

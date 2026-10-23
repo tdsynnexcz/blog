@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Copilot na 30 dní zdarma: nová cesta, jak přivést zákazníky k umělé inteligenci – Blog TD SYNNEX CZ</title>
 <meta name="description" content="Od 1. srpna nabízí CSP novou zkušební licenci Microsoft 365 Copilot Business pro 25 uživatelů na 30 dní. Jak ji využít u zákazníků.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.article div[style*="display:flex"],.article div[style*="display: flex"]{flex-wrap:wrap}.article div[style*="display:flex"]>div,.article div[style*="display: flex"]>div{min-width:0;flex-basis:100%!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Microsoft</div>
     <h1>Copilot na 30 dní zdarma: nová cesta, jak přivést zákazníky k umělé inteligenci</h1>
     <div class="meta">17. července 2026 · Od 1. srpna nabízí CSP novou zkušební licenci Microsoft 365 Copilot Business pro 25 uživatelů na 30 dní. Jak ji využít u zákazníků.</div>
@@ -49,11 +50,11 @@ footer a:hover{color:var(--accent)}
 </header>
 <main class="wrap">
   <div class="cover"><img src="../assets/images/trial.png" alt="Copilot na 30 dní zdarma: nová cesta, jak přivést zákazníky k umělé inteligenci"></div>
-  <article class="article"><div style="max-width:800px; margin:0 auto; font-family:Arial, Helvetica, sans-serif; color:#3c4a4b; line-height:1.6;">
+  <article class="article"><div style="max-width:800px; margin:0 auto; font-family:Arial,Helvetica,sans-serif; color:#1F2A2B; line-height:1.6;">
 
   <!-- PEREX -->
-  <div style="background-color:#f2f7fa; border-left:4px solid #0b5cab; padding:20px 24px; margin-bottom:28px; border-radius:4px;">
-    <p style="margin:0; font-size:16px; color:#0f1b2d;">
+  <div style="background-color:#F0F0F0; border-left:4px solid #005758; padding:20px 24px; margin-bottom:28px; border-radius:4px;">
+    <p style="margin:0; font-size:16px; color:#003031;">
       <strong>Ve zkratce:</strong> Microsoft od 1. srpna spouští novou motion s názvem <strong>Copilot in 30</strong>. Jde o 30denní zkušební licenci Microsoft 365 Copilot Business pro 25 uživatelů, kterou partneři v CSP mohou nabídnout zákazníkům, kteří Copilota ještě nikdy nezkusili. Nabídka je časově omezená a míří přesně na segment, ve kterém se pohybujete nejčastěji – SMB.
     </p>
   </div>
@@ -66,35 +67,35 @@ footer a:hover{color:var(--accent)}
   <p>Od 1. srpna proto přichází <strong>Copilot in 30</strong> – opakovatelný proces, jehož jádrem je nová 30denní zkušební licence Microsoft 365 Copilot Business pro 25 uživatelů, dostupná přímo skrze CSP. Cílem není jednorázová akce, ale nástroj, který můžete používat opakovaně u každého nového zájemce.</p>
 
   <!-- FEATURE OVERVIEW -->
-  <h2 style="color:#0b5cab; font-size:22px; margin-top:36px;">Tři pilíře, na kterých motion stojí</h2>
+  <h2 style="color:#005758; font-size:22px; margin-top:36px;">Tři pilíře, na kterých motion stojí</h2>
   <p>Microsoft celou iniciativu staví na třech jasně definovaných cílech, které na sebe navazují:</p>
 
   <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin:20px 0;">
-    <div style="background-color:#f2f7fa; border-radius:6px; padding:16px; border-top:4px solid #0b5cab;">
-      <p style="color:#08BED5; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">MOTION</p>
-      <p style="color:#0f1b2d; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Škálovatelné evaluace</p>
+    <div style="background-color:#F0F0F0; border-radius:6px; padding:16px; border-top:4px solid #005758;">
+      <p style="color:#005758; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">MOTION</p>
+      <p style="color:#003031; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Škálovatelné evaluace</p>
       <p style="margin:0; font-size:14px;">Opakovatelný proces zkušebního nasazení, navržený tak, aby fungoval hromadně napříč segmentem SMB.</p>
     </div>
-    <div style="background-color:#f2f7fa; border-radius:6px; padding:16px; border-top:4px solid #0b5cab;">
-      <p style="color:#08BED5; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">ZAMĚŘENÍ</p>
-      <p style="color:#0f1b2d; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Noví zákazníci Copilota</p>
+    <div style="background-color:#F0F0F0; border-radius:6px; padding:16px; border-top:4px solid #005758;">
+      <p style="color:#005758; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">ZAMĚŘENÍ</p>
+      <p style="color:#003031; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Noví zákazníci Copilota</p>
       <p style="margin:0; font-size:14px;">Nabídka cílí na firmy, které s Copilotem dosud nemají žádnou zkušenost a potřebují ho vyzkoušet naživo.</p>
     </div>
-    <div style="background-color:#f2f7fa; border-radius:6px; padding:16px; border-top:4px solid #0b5cab;">
-      <p style="color:#08BED5; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">CÍL</p>
-      <p style="color:#0f1b2d; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Vyšší konverze</p>
+    <div style="background-color:#F0F0F0; border-radius:6px; padding:16px; border-top:4px solid #005758;">
+      <p style="color:#005758; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin:0 0 6px 0;">CÍL</p>
+      <p style="color:#003031; font-weight:bold; font-size:16px; margin:0 0 8px 0;">Vyšší konverze</p>
       <p style="margin:0; font-size:14px;">Zkušební období vytváří poptávku, buduje pipeline a urychluje přechod z evaluace na placené nasazení.</p>
     </div>
   </div>
 
   <!-- TABLE -->
-  <h2 style="color:#0b5cab; font-size:22px; margin-top:36px;">Parametry trialu v kostce</h2>
+  <h2 style="color:#005758; font-size:22px; margin-top:36px;">Parametry trialu v kostce</h2>
   <table style="width:100%; border-collapse:collapse; margin:16px 0;">
-    <tr style="background-color:#0b5cab;">
+    <tr style="background-color:#005758;">
       <th style="color:#ffffff; text-align:left; padding:10px 14px; font-size:14px;">Parametr</th>
       <th style="color:#ffffff; text-align:left; padding:10px 14px; font-size:14px;">Hodnota</th>
     </tr>
-    <tr style="background-color:#f2f7fa;">
+    <tr style="background-color:#F0F0F0;">
       <td style="padding:10px 14px; font-size:14px;">Produkt</td>
       <td style="padding:10px 14px; font-size:14px;">Microsoft 365 Copilot Business (trial)</td>
     </tr>
@@ -102,7 +103,7 @@ footer a:hover{color:var(--accent)}
       <td style="padding:10px 14px; font-size:14px;">Počet uživatelů</td>
       <td style="padding:10px 14px; font-size:14px;">25</td>
     </tr>
-    <tr style="background-color:#f2f7fa;">
+    <tr style="background-color:#F0F0F0;">
       <td style="padding:10px 14px; font-size:14px;">Délka trvání</td>
       <td style="padding:10px 14px; font-size:14px;">30 dní</td>
     </tr>
@@ -110,7 +111,7 @@ footer a:hover{color:var(--accent)}
       <td style="padding:10px 14px; font-size:14px;">Dostupnost</td>
       <td style="padding:10px 14px; font-size:14px;">Od 1. srpna, přes CSP</td>
     </tr>
-    <tr style="background-color:#f2f7fa;">
+    <tr style="background-color:#F0F0F0;">
       <td style="padding:10px 14px; font-size:14px;">Cílová skupina</td>
       <td style="padding:10px 14px; font-size:14px;">Zákazníci bez předchozí zkušenosti s Copilotem</td>
     </tr>
@@ -121,8 +122,8 @@ footer a:hover{color:var(--accent)}
   </table>
 
   <!-- TIP BOX -->
-  <div style="background-color:#e8f4f0; border-left:4px solid #005758; padding:18px 22px; margin:28px 0; border-radius:4px;">
-    <p style="margin:0; font-size:15px; color:#0f1b2d;">
+  <div style="background-color:#F0F0F0; border-left:4px solid #005758; padding:18px 22px; margin:28px 0; border-radius:4px;">
+    <p style="margin:0; font-size:15px; color:#003031;">
       <strong>Tip - staňte se zákazníkem nula:</strong> Microsoft doporučuje, aby si partneři nejprve sami vyzkoušeli Copilota interně, a to prostřednictvím microskilling zdrojů na <strong>aka.ms/MicroSkilling</strong>. Díky vlastní zkušenosti pak dokážete zákazníka provést trialem mnohem sebejistěji a odpovědět mu na konkrétní otázky z praxe.
     </p>
   </div>
@@ -130,7 +131,7 @@ footer a:hover{color:var(--accent)}
   <p>Praktický dopad pro vás jako partnera je jasný. Místo abyste zákazníka přesvědčovali PowerPointem, otevřete mu 30denní okno, ve kterém si sám ověří, jak Copilot pomáhá s přípravou emailů, souhrny schůzek nebo analýzou dat v Excelu. Přesně tuto zkušenost popisujeme i v našich předchozích článcích o cenovém zvýhodnění balíčků s Copilotem - a trial je logickým prvním krokem, který zákazníka na cestu k placené licenci nasměruje.</p>
 
   <!-- FAQ -->
-  <h2 style="color:#0b5cab; font-size:22px; margin-top:36px;">Časté otázky</h2>
+  <h2 style="color:#005758; font-size:22px; margin-top:36px;">Časté otázky</h2>
 
   <p style="margin-bottom:4px;"><strong>Pro koho je trial určený?</strong></p>
   <p style="margin-top:0;">Výhradně pro zákazníky, kteří Copilota ještě nepoužívají. Cílem je otevřít dveře novým příležitostem, ne nahradit stávající placené licence.</p>
@@ -145,16 +146,16 @@ footer a:hover{color:var(--accent)}
   <p style="margin-top:0;">Sledujte StreamOne Ion a InTouch portál, protože nabídka je časově omezená a Microsoft ji nemusí ponechat dostupnou trvale.</p>
 
   <!-- CONCLUSION + CTA -->
-  <h2 style="color:#0b5cab; font-size:22px; margin-top:36px;">Proč tuto příležitost nenechat ležet ladem</h2>
+  <h2 style="color:#005758; font-size:22px; margin-top:36px;">Proč tuto příležitost nenechat ležet ladem</h2>
   <p>Zkušební licence odbourává největší bariéru prodeje – strach z neznáma. Zákazník, který si Copilota vyzkouší na vlastní práci, obvykle argumentuje sám sobě lépe, než dokážeme my jako partneři. Copilot in 30 vám navíc dává jasně definovaný, opakovatelný rámec, díky kterému nemusíte vymýšlet vlastní proces evaluace od nuly.</p>
 
-  <div style="background-color:#0b5cab; padding:22px 26px; border-radius:6px; margin-top:28px;">
+  <div style="background-color:#005758; padding:22px 26px; border-radius:6px; margin-top:28px;">
     <p style="color:#ffffff; margin:0 0 10px 0; font-size:16px;"><strong>Chcete pomoct s nastavením trialu nebo přípravou nabídky pro zákazníka?</strong></p>
     <p style="color:#ffffff; margin:0; font-size:15px;">Napište nám na <a href="mailto:microsoft.cz@tdsynnex.com" style="color:#08BED5;">microsoft.cz@tdsynnex.com</a> - rádi vám poradíme s aktivací i s výpočtem ceny po skončení zkušební doby v naší <a href="https://tdsynnexcz.github.io/nce-kalkulator/" style="color:#08BED5;">NCE Licence Kalkulátoru</a>.</p>
   </div>
 
 </div></article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>

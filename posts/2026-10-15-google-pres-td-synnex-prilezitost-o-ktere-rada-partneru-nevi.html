@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google přes TD SYNNEX: příležitost, o které řada partnerů neví – Blog TD SYNNEX CZ</title>
 <meta name="description" content="TD SYNNEX je exkluzivním distributorem Google pro CZ a SK. Workspace, Cloud, Gemini Enterprise a Security pro vaše zákazníky - s podporou od registrace.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f0fe;color:#1a73e8;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Google</div>
     <h1>Google přes TD SYNNEX: příležitost, o které řada partnerů neví</h1>
     <div class="meta">15. října 2026 · TD SYNNEX je exkluzivním distributorem Google pro CZ a SK. Workspace, Cloud, Gemini Enterprise a Security pro vaše zákazníky - s podporou od registrace.</div>
@@ -49,49 +50,49 @@ footer a:hover{color:var(--accent)}
 </header>
 <main class="wrap">
   <div class="cover"><img src="../assets/images/google-pres-td-synnex.png" alt="Google přes TD SYNNEX: příležitost, o které řada partnerů neví"></div>
-  <article class="article"><div style="font-family:Arial,Helvetica,sans-serif;color:#3c4a4b;font-size:17px;line-height:1.7;max-width:860px;margin:0 auto;">
+  <article class="article"><div style="font-family:Arial,Helvetica,sans-serif;color:#1F2A2B;font-size:17px;line-height:1.7;max-width:860px;margin:0 auto;">
 
-<div style="background:#f0f7f6;border-left:6px solid #1DB87E;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
-<p style="margin:0;font-size:17px;color:#0D4D4D;"><strong>V kostce:</strong> TD SYNNEX je exkluzivním distributorem Google pro Českou republiku a Slovensko. Přes nás můžete svým zákazníkům nabídnout Google Workspace, Google Cloud, Gemini Enterprise, Google Cloud Security i zařízení s ChromeOS - s podporou od první registrace až po první projekt. Pokud jste dosud Google neprodávali, nebo ho kupujete kartou přímo u Googlu, tento článek je pro vás.</p>
+<div style="background:#F0F0F0;border-left:6px solid #2D9F88;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
+<p style="margin:0;font-size:17px;color:#005758;"><strong>V kostce:</strong> TD SYNNEX je exkluzivním distributorem Google pro Českou republiku a Slovensko. Přes nás můžete svým zákazníkům nabídnout Google Workspace, Google Cloud, Gemini Enterprise, Google Cloud Security i zařízení s ChromeOS - s podporou od první registrace až po první projekt. Pokud jste dosud Google neprodávali, nebo ho kupujete kartou přímo u Googlu, tento článek je pro vás.</p>
 </div>
 
 <p style="margin:0 0 18px 0;">Představte si běžnou situaci. Spravujete IT pro firmu se třiceti zaměstnanci a nový marketingový tým se ptá, jestli by nemohl pracovat v Google Workspace, na který je zvyklý z předchozí práce. Odpověď „to neděláme“ znamená, že si zákazník licence koupí jinde nebo přímo u Googlu kartou. A spolu s nimi často odchází i správa, podpora a další projekty.</p>
 
 <p style="margin:0 0 32px 0;">Přitom to tak být nemusí. Google pro firmy je plnohodnotné portfolio a partnerů, kteří ho na českém a slovenském trhu prodávají, je zatím výrazně méně než u Microsoftu. Pro vás to znamená příležitost s menší konkurencí.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Google není jen vyhledávač</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Google není jen vyhledávač</h2>
 
 <p style="margin:0 0 18px 0;">Když se řekne Google, většina lidí si vybaví vyhledávání, reklamu nebo YouTube. Pro firmy ale Google nabízí něco úplně jiného - cloud, nástroje pro spolupráci, AI, bezpečnost a zařízení. Portfolio stojí na čtyřech pilířích, které doplňuje ChromeOS:</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:0 0 24px 0;">
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Spolupráce</p>
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Google Workspace</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Spolupráce</p>
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Google Workspace</p>
 <p style="margin:0;font-size:15px;">Gmail, Kalendář, Disk, Dokumenty a Meet - kancelářské aplikace a komunikace v jednom balíku.</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Infrastruktura</p>
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Google Cloud</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Infrastruktura</p>
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Google Cloud</p>
 <p style="margin:0;font-size:15px;">Infrastruktura, data a aplikace v cloudu - od virtuálních serverů po datové a analytické služby.</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Umělá inteligence</p>
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Gemini Enterprise</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Umělá inteligence</p>
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Gemini Enterprise</p>
 <p style="margin:0;font-size:15px;">Platforma pro firemní AI agenty, kteří pracují s daty a aplikacemi zákazníka.</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Bezpečnost</p>
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Google Cloud Security</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Bezpečnost</p>
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Google Cloud Security</p>
 <p style="margin:0;font-size:15px;">Kompletní detekce bezpečnostních hrozeb a reakce na incidenty.</p>
 </div>
 </div>
 
-<div style="background:#ffffff;border:2px solid #0D4D4D;border-radius:10px;padding:20px 24px;margin:0 0 32px 0;">
-<p style="margin:0 0 10px 0;font-weight:bold;color:#0D4D4D;font-size:18px;">Tip - ChromeOS jako dostupná cesta k bezpečnosti</p>
+<div style="background:#ffffff;border:2px solid #005758;border-radius:10px;padding:20px 24px;margin:0 0 32px 0;">
+<p style="margin:0 0 10px 0;font-weight:bold;color:#005758;font-size:18px;">Tip - ChromeOS jako dostupná cesta k bezpečnosti</p>
 <p style="margin:0;">ChromeOS a Chrome Enterprise Premium jsou zajímavou volbou pro zákazníky, kteří chtějí zvýšit bezpečnost, ale nemají rozpočet na drahá řešení. Spravovaná zařízení a zabezpečený prohlížeč často pokryjí potřeby menších firem i jednotlivých oddělení.</p>
 </div>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Proč Google zařadit do portfolia</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Proč Google zařadit do portfolia</h2>
 
 <ul style="margin:0 0 24px 0;padding-left:22px;">
 <li style="margin-bottom:10px;"><strong>Skutečná alternativa</strong> - Google je přímým konkurentem Microsoftu se silným produktem. Zákazníkům, kteří hledají jinou cestu, tak dokážete nabídnout plnohodnotnou odpověď místo odmítnutí.</li>
@@ -102,23 +103,23 @@ footer a:hover{color:var(--accent)}
 
 <p style="margin:0 0 32px 0;">Z mé zkušenosti nejlépe na Googlu vydělávají partneři, kteří ho nevnímají jako „buď, anebo“. Zákazník, který ví, že mu jeho IT partner umí poradit s oběma světy, mu důvěřuje víc - a nemá důvod hledat jinde.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Proč Google přes TD SYNNEX</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Proč Google přes TD SYNNEX</h2>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:0 0 24px 0;">
-<div style="background:#f0f7f6;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:26px;color:#0D4D4D;font-weight:bold;">CZ + SK</p>
+<div style="background:#F0F0F0;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:26px;color:#005758;font-weight:bold;">CZ + SK</p>
 <p style="margin:0;font-size:15px;">Exkluzivní distributor Google pro Českou republiku a Slovensko</p>
 </div>
-<div style="background:#f0f7f6;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:26px;color:#0D4D4D;font-weight:bold;">2026</p>
+<div style="background:#F0F0F0;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:26px;color:#005758;font-weight:bold;">2026</p>
 <p style="margin:0;font-size:15px;">Ocenění Google Cloud Distribution: Market Reach Partner of the Year</p>
 </div>
-<div style="background:#f0f7f6;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:26px;color:#0D4D4D;font-weight:bold;">CoE</p>
+<div style="background:#F0F0F0;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:26px;color:#005758;font-weight:bold;">CoE</p>
 <p style="margin:0;font-size:15px;">Technický tým Center of Excellence v Barceloně</p>
 </div>
-<div style="background:#f0f7f6;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:26px;color:#0D4D4D;font-weight:bold;">ION</p>
+<div style="background:#F0F0F0;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:26px;color:#005758;font-weight:bold;">ION</p>
 <p style="margin:0;font-size:15px;">Objednávky přes StreamOne ION, nabídky v EUR</p>
 </div>
 </div>
@@ -131,28 +132,28 @@ footer a:hover{color:var(--accent)}
 <li style="margin-bottom:10px;"><strong>Rozvoj portfolia</strong> - poradíme s čerpáním partnerských fondů Google (DAF a PSF) a nabídneme školení i marketingovou podporu.</li>
 </ul>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Jak funguje licencování</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Jak funguje licencování</h2>
 
 <p style="margin:0 0 18px 0;">Licenční model se liší podle typu produktu. Žádná věda to ale není:</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:0 0 18px 0;">
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Google Workspace</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Google Workspace</p>
 <p style="margin:0;font-size:15px;">Licence za uživatele, platba měsíčně nebo ročně, závazek na rok a déle.</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Google Cloud</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Google Cloud</p>
 <p style="margin:0;font-size:15px;">Pay-as-you-go - zákazník platí jen za skutečnou spotřebu.</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 8px 0;color:#0D4D4D;font-weight:bold;">Chrome a Meet hardware</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 8px 0;color:#005758;font-weight:bold;">Chrome a Meet hardware</p>
 <p style="margin:0;font-size:15px;">Standardní licence s platbou předem, obvykle na jeden rok.</p>
 </div>
 </div>
 
 <p style="margin:0 0 32px 0;">Workspace a Google Cloud objednáváte přes StreamOne ION, nabídky dostáváte v EUR a fakturujeme v následujícím měsíci. Licence pro Chrome a Meet hardware vyřizujeme e-mailem s fakturací v následujících dnech.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Pro koho se Google hodí</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Pro koho se Google hodí</h2>
 
 <p style="margin:0 0 18px 0;">Google dává smysl dvěma typům partnerů:</p>
 
@@ -161,8 +162,8 @@ footer a:hover{color:var(--accent)}
 <li style="margin-bottom:10px;"><strong>Projektový integrátor</strong> - pokud realizujete komplexní projekty, otevírá se vám Google Cloud, Google Cloud Security, ChromeOS i hardware pro Google Meet.</li>
 </ul>
 
-<div style="background:#f0f7f6;border-left:6px solid #1DB87E;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
-<p style="margin:0 0 10px 0;font-weight:bold;color:#0D4D4D;">Rychlý test: je Google pro vás?</p>
+<div style="background:#F0F0F0;border-left:6px solid #2D9F88;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
+<p style="margin:0 0 10px 0;font-weight:bold;color:#005758;">Rychlý test: je Google pro vás?</p>
 <p style="margin:0 0 8px 0;">Pokud na některou z těchto otázek odpovíte „ano“, stojí za to se nám ozvat:</p>
 <ul style="margin:0;padding-left:22px;">
 <li style="margin-bottom:6px;"><strong>Alternativa</strong> - hledají vaši zákazníci cenovou alternativu k Microsoftu?</li>
@@ -172,7 +173,7 @@ footer a:hover{color:var(--accent)}
 </ul>
 </div>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Jak začít v pěti krocích</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Jak začít v pěti krocích</h2>
 
 <ol style="margin:0 0 24px 0;padding-left:22px;">
 <li style="margin-bottom:10px;"><strong>Napište nám</strong> na google.cz@tdsynnex.com - stačí pár vět o tom, co děláte.</li>
@@ -184,37 +185,37 @@ footer a:hover{color:var(--accent)}
 
 <p style="margin:0 0 32px 0;">Jak to může vypadat v praxi? Jeden z našich dlouholetých partnerů s námi roky spolupracoval hlavně na hardwaru a Google vůbec neprodával. Po doporučení a úvodním workshopu se do něj pustil - a dnes patří k našim největším Google partnerům s kompletním portfoliem od Workspace po cloud.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Často kladené otázky</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Často kladené otázky</h2>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Musím kvůli Googlu omezit prodej Microsoftu?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Musím kvůli Googlu omezit prodej Microsoftu?</p>
 <p style="margin:0;">Ne. Řada partnerů nabízí obě portfolia současně a podle potřeb zákazníka volí to vhodnější. Obě řešení vám dodáme ze stejného místa.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Potřebuji pro začátek certifikace?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Potřebuji pro začátek certifikace?</p>
 <p style="margin:0;">Ne, certifikace nejsou povinné. Vhodné vzdělávání vám rádi doporučíme, ale první obchod můžete udělat hned po registraci.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Google dnes kupujeme kartou přímo u Googlu. Proč to měnit?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Google dnes kupujeme kartou přímo u Googlu. Proč to měnit?</p>
 <p style="margin:0;">Přes TD SYNNEX získáte partnerské podmínky, objednávky a fakturaci v jednom portálu, nabídky v EUR a obchodní, technickou i marketingovou podporu. Jako exkluzivní distributor pro CZ a SK jsme pro partnery přirozenou cestou ke Googlu.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 32px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Kdo mi pomůže s technickými dotazy?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 32px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Kdo mi pomůže s technickými dotazy?</p>
 <p style="margin:0;">Náš tým Center of Excellence v Barceloně, který se Googlu věnuje naplno. Technickou konzultaci zajistíme už pro první obchodní příležitost.</p>
 </div>
 
-<div style="background:linear-gradient(135deg,#0D4D4D 0%,#1DB87E 100%);border-radius:14px;padding:32px 28px;color:#ffffff;">
+<div style="background:linear-gradient(135deg,#003031 0%,#005758 100%);border-radius:14px;padding:32px 28px;color:#ffffff;">
 <p style="margin:0 0 10px 0;font-size:22px;font-weight:bold;color:#ffffff;">Chcete s Googlem začít?</p>
 <p style="margin:0 0 20px 0;color:#ffffff;">Ozvěte se nám - provedeme vás registrací, pomůžeme s první nabídkou a postaráme se o technickou i marketingovou podporu.</p>
-<a href="mailto:google.cz@tdsynnex.com" style="display:inline-block;background:#ffffff;color:#0D4D4D;font-weight:bold;text-decoration:none;padding:12px 24px;border-radius:8px;">Napište nám na google.cz@tdsynnex.com</a>
+<a href="mailto:google.cz@tdsynnex.com" style="display:inline-block;background:#ffffff;color:#005758;font-weight:bold;text-decoration:none;padding:12px 24px;border-radius:8px;">Napište nám na google.cz@tdsynnex.com</a>
 </div>
 
 </div>
 </article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>

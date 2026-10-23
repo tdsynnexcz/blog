@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft 365 E7: nový vrchol licenčního balíku, který spojuje vše, co enterprise firmy potřebují – Blog TD SYNNEX CZ</title>
 <meta name="description" content="Microsoft 365 E7 spojuje E5, Entra Suite, Copilot a Agent 365 v jednom balíku. Dostupný od 1. května 2026 v CSP se slevami až 15 %.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Microsoft</div>
     <h1>Microsoft 365 E7: nový vrchol licenčního balíku, který spojuje vše, co enterprise firmy potřebují</h1>
     <div class="meta">12. dubna 2026 · Microsoft 365 E7 spojuje E5, Entra Suite, Copilot a Agent 365 v jednom balíku. Dostupný od 1. května 2026 v CSP se slevami až 15 %.</div>
@@ -83,41 +84,41 @@ footer a:hover{color:var(--accent)}
 <table style="width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:15px;">
   <thead>
     <tr>
-      <th style="background:#0D4D4D;color:#fff;text-align:left;padding:10px 12px;">Oblast</th>
-      <th style="background:#0D4D4D;color:#fff;text-align:left;padding:10px 12px;">Microsoft 365 E5</th>
-      <th style="background:#0D4D4D;color:#fff;text-align:left;padding:10px 12px;">Microsoft 365 E7</th>
+      <th style="background:#005758;color:#fff;text-align:left;padding:10px 12px;">Oblast</th>
+      <th style="background:#005758;color:#fff;text-align:left;padding:10px 12px;">Microsoft 365 E5</th>
+      <th style="background:#005758;color:#fff;text-align:left;padding:10px 12px;">Microsoft 365 E7</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Bezpečnost a produktivita</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Plná E5 sada</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Plná E5 sada</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Bezpečnost a produktivita</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Plná E5 sada</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Plná E5 sada</td>
     </tr>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Správa identit (Entra)</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Základní</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10003; Entra Suite (rozšířená)</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Správa identit (Entra)</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Základní</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10003; Entra Suite (rozšířená)</td>
     </tr>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Microsoft 365 Copilot</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10007; Samostatná licence</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10003; Součást balíku</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Microsoft 365 Copilot</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10007; Samostatná licence</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10003; Součást balíku</td>
     </tr>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Microsoft Agent 365</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10007; Nedostupné</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10003; Součást balíku</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Microsoft Agent 365</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10007; Nedostupné</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10003; Součást balíku</td>
     </tr>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">Internet Access / Private Access</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10007;</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10003;</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">Internet Access / Private Access</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10007;</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10003;</td>
     </tr>
     <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">ID Governance v plném rozsahu</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10007;</td>
-      <td style="padding:10px 12px;border-bottom:1px solid #e2e8e6;">&#10003;</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">ID Governance v plném rozsahu</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10007;</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #D9D8D7;">&#10003;</td>
     </tr>
   </tbody>
 </table>
@@ -160,6 +161,6 @@ footer a:hover{color:var(--accent)}
 
 <p>Máte otázky k licencování E7 nebo chcete probrat konkrétní zákaznický scénář? Ozvěte se.</p></article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>

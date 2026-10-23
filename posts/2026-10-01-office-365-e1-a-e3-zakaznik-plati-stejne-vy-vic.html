@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Office 365 E1 a E3: zákazník platí stejně, vy víc – Blog TD SYNNEX CZ</title>
 <meta name="description" content="Od 1. října 2026 Microsoft snížil základní marži u Office 365 E1, E3 a dalších služeb z 20 % na 15 %. Zákazník platí stejně, partner vydělá méně.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Microsoft</div>
     <h1>Office 365 E1 a E3: zákazník platí stejně, vy víc</h1>
     <div class="meta">1. října 2026 · Od 1. října 2026 Microsoft snížil základní marži u Office 365 E1, E3 a dalších služeb z 20 % na 15 %. Zákazník platí stejně, partner vydělá méně.</div>
@@ -49,32 +50,32 @@ footer a:hover{color:var(--accent)}
 </header>
 <main class="wrap">
   <div class="cover"><img src="../assets/images/office-365-marze.png" alt="Office 365 E1 a E3: zákazník platí stejně, vy víc"></div>
-  <article class="article"><div style="font-family:Arial,Helvetica,sans-serif;color:#3c4a4b;font-size:17px;line-height:1.7;max-width:860px;margin:0 auto;">
+  <article class="article"><div style="font-family:Arial,Helvetica,sans-serif;color:#1F2A2B;font-size:17px;line-height:1.7;max-width:860px;margin:0 auto;">
 
-<div style="background:#f0f7f6;border-left:6px solid #1DB87E;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
-<p style="margin:0;font-size:17px;color:#0D4D4D;"><strong>V kostce:</strong> Od 1. října 2026 Microsoft snížil partnerskou marži u Office 365 E1, Office 365 E3 a několika samostatných služeb. Koncová cena pro zákazníka se nemění, základní marže partnera však klesla z 20 % na 15 %. Na faktuře zákazníka to nepoznáte, ve vaší marži ano.</p>
+<div style="background:#F0F0F0;border-left:6px solid #2D9F88;border-radius:8px;padding:20px 24px;margin:0 0 32px 0;">
+<p style="margin:0;font-size:17px;color:#005758;"><strong>V kostce:</strong> Od 1. října 2026 Microsoft snížil partnerskou marži u Office 365 E1, Office 365 E3 a několika samostatných služeb. Koncová cena pro zákazníka se nemění, základní marže partnera však klesla z 20 % na 15 %. Na faktuře zákazníka to nepoznáte, ve vaší marži ano.</p>
 </div>
 
 <p style="margin:0 0 18px 0;">Představte si říjnovou obnovu. Zákazník se čtyřiceti licencemi Office 365 E3 prodlužuje předplatné, cena v ceníku Microsoftu zůstala stejná a nikdo nic neřeší. Zákazníkovi fakturujete totéž co loni. Jenže když dorazí faktura od distributora, je vyšší - a rozdíl jde přímo z vašeho zisku.</p>
 
 <p style="margin:0 0 32px 0;">Nejde o chybu v ceníku. Jde o jednu z méně viditelných změn, které Microsoft zavedl v rámci nového fiskálního roku FY27. Pojďme si ji rozebrat.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Co se přesně změnilo</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Co se přesně změnilo</h2>
 
 <p style="margin:0 0 18px 0;">Microsoft v CSP pracuje s doporučenou koncovou cenou (ERP) a se základní marží, o kterou je nákupní cena partnera nižší. Tuto základní marži u vybraných produktů snížil z 20 % na 15 %. Doporučenou koncovou cenu přitom určuje Microsoft a ta zůstala beze změny. Jinými slovy: zákazník platí stejně, vy nakupujete dráž a vaše marže je prostě menší.</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:0 0 32px 0;">
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Účinnost</p>
-<p style="margin:0;color:#0D4D4D;font-weight:bold;">1. října 2026</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Účinnost</p>
+<p style="margin:0;color:#005758;font-weight:bold;">1. října 2026</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Cena pro zákazníka</p>
-<p style="margin:0;color:#0D4D4D;font-weight:bold;">Beze změny</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Cena pro zákazníka</p>
+<p style="margin:0;color:#005758;font-weight:bold;">Beze změny</p>
 </div>
-<div style="background:#ffffff;border:1px solid #d5e6e3;border-radius:10px;padding:18px;">
-<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#1DB87E;font-weight:bold;">Základní marže partnera</p>
-<p style="margin:0;color:#0D4D4D;font-weight:bold;">20 % → 15 %</p>
+<div style="background:#ffffff;border:1px solid #D9D8D7;border-radius:10px;padding:18px;">
+<p style="margin:0 0 6px 0;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#005758;font-weight:bold;">Základní marže partnera</p>
+<p style="margin:0;color:#005758;font-weight:bold;">20 % → 15 %</p>
 </div>
 </div>
 
@@ -87,19 +88,19 @@ footer a:hover{color:var(--accent)}
 <li style="margin-bottom:8px;"><strong>Microsoft 365 Apps for Business</strong> a <strong>Microsoft 365 Apps for Enterprise</strong></li>
 </ul>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Proč 5 % bolí víc, než se zdá</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Proč 5 % bolí víc, než se zdá</h2>
 
 <p style="margin:0 0 18px 0;">Pět procentních bodů zní nevinně. Jenže z marže 20 % je to celá čtvrtina, a právě v tom je háček. Ukažme si to na zjednodušeném příkladu se zaokrouhlenými čísly:</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:0 0 18px 0;">
-<div style="background:#f7f9f9;border:1px solid #d5e6e3;border-radius:10px;padding:20px;">
-<p style="margin:0 0 10px 0;font-weight:bold;color:#0D4D4D;font-size:18px;">Do září 2026</p>
+<div style="background:#F0F0F0;border:1px solid #D9D8D7;border-radius:10px;padding:20px;">
+<p style="margin:0 0 10px 0;font-weight:bold;color:#005758;font-size:18px;">Do září 2026</p>
 <p style="margin:0 0 6px 0;">Cena pro zákazníka: <strong>100 Kč</strong></p>
 <p style="margin:0 0 6px 0;">Vaše nákupní cena: <strong>80 Kč</strong></p>
 <p style="margin:0;">Vám zůstane: <strong>20 Kč</strong></p>
 </div>
-<div style="background:#f0f7f6;border:2px solid #1DB87E;border-radius:10px;padding:20px;">
-<p style="margin:0 0 10px 0;font-weight:bold;color:#0D4D4D;font-size:18px;">Od října 2026</p>
+<div style="background:#F0F0F0;border:2px solid #2D9F88;border-radius:10px;padding:20px;">
+<p style="margin:0 0 10px 0;font-weight:bold;color:#005758;font-size:18px;">Od října 2026</p>
 <p style="margin:0 0 6px 0;">Cena pro zákazníka: <strong>100 Kč</strong></p>
 <p style="margin:0 0 6px 0;">Vaše nákupní cena: <strong>85 Kč</strong></p>
 <p style="margin:0;">Vám zůstane: <strong>15 Kč</strong></p>
@@ -108,26 +109,26 @@ footer a:hover{color:var(--accent)}
 
 <p style="margin:0 0 32px 0;">Částky jsou zjednodušené na doporučenou cenu 100 Kč, skutečné ceny najdete v ceníku. Princip však platí obecně: nákupní cena vzrostla o 5 % doporučené ceny, ale z vašeho výdělku na licenci zmizela čtvrtina. U zákazníka se stovkami licencí Office 365 E3 to za rok není zanedbatelná částka.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Proč to Microsoft dělá</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Proč to Microsoft dělá</h2>
 
 <p style="margin:0 0 18px 0;">Snížení marže není izolovaný krok. Microsoft ve fiskálním roce FY27 přesouvá peníze, které partnerům platí, od takzvaných legacy produktů k těm strategickým. Plošně vyplácené incentivy nahrazuje odměnami za růst. Zatímco u Office 365 základní marže klesá, u Microsoft 365 Copilot se od července zdvojnásobila z 10 % na 20 %.</p>
 
-<p style="margin:0 0 18px 0;">Klíčovým nástrojem jsou <strong>growth margins</strong>, které spustil 1. října. Jde o dodatečnou marži nad rámec té základní, kterou partner získá za nového zákazníka na daném produktu, rozšíření počtu licencí nebo reálnou adopci. Vztahují se na vybrané strategické produkty a promoakce na Microsoft 365 E5, E7 a Copilot k 30. září skončily mimo jiné kvůli přechodu na tento model. Jak growth margins fungují a jak na ně dosáhnout, jsme podrobně rozebrali v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#0D4D4D;font-weight:bold;">Growth Margin v CSP: Jak získat vyšší marži od října 2026</a>.</p>
+<p style="margin:0 0 18px 0;">Klíčovým nástrojem jsou <strong>growth margins</strong>, které spustil 1. října. Jde o dodatečnou marži nad rámec té základní, kterou partner získá za nového zákazníka na daném produktu, rozšíření počtu licencí nebo reálnou adopci. Vztahují se na vybrané strategické produkty a promoakce na Microsoft 365 E5, E7 a Copilot k 30. září skončily mimo jiné kvůli přechodu na tento model. Jak growth margins fungují a jak na ně dosáhnout, jsme podrobně rozebrali v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#005758;font-weight:bold;">Growth Margin v CSP: Jak získat vyšší marži od října 2026</a>.</p>
 
 <p style="margin:0 0 32px 0;">Vzkaz Microsoftu je tedy čitelný: na udržování starších samostatných licencí vyděláte méně, na posouvání zákazníků k modernějším balíčkům a AI více.</p>
 
-<div style="background:#ffffff;border:2px solid #0D4D4D;border-radius:10px;padding:20px 24px;margin:0 0 32px 0;">
-<p style="margin:0 0 10px 0;font-weight:bold;color:#0D4D4D;font-size:18px;">Pozor na pevné ceny ve smlouvách</p>
+<div style="background:#ffffff;border:2px solid #005758;border-radius:10px;padding:20px 24px;margin:0 0 32px 0;">
+<p style="margin:0 0 10px 0;font-weight:bold;color:#005758;font-size:18px;">Pozor na pevné ceny ve smlouvách</p>
 <p style="margin:0;">Pokud máte se zákazníkem dohodnutou pevnou cenu za licenci nebo paušál za služby včetně licencí, projděte si kalkulace. U ročních a víceletých předplatných v NCE platí cena po dobu závazku, vyšší nákupní cena se proto typicky projeví až při obnově. Právě obnovy v nejbližších měsících jsou ideální chvílí přepočítat, kolik na zákazníkovi skutečně vyděláte.</p>
 </div>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Co s tím můžete udělat</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Co s tím můžete udělat</h2>
 
 <p style="margin:0 0 18px 0;">Na doporučenou cenu sáhnout nemůžete, s tím, co zákazník kupuje, ale pracovat můžete. Podle jeho typu se nabízí několik cest:</p>
 
 <ul style="margin:0 0 32px 0;padding-left:22px;">
 <li style="margin-bottom:10px;"><strong>Upgradovat na Microsoft 365 E3</strong> - zákazník s Office 365 E3 získá správu zařízení, pokročilejší zabezpečení i Windows Enterprise. Pro způsobilé zákazníky navíc do 31. prosince 2026 běží promoakce na Microsoft 365 E3 (20 % na roční a 10 % na tříleté předplatné).</li>
-<li style="margin-bottom:10px;"><strong>Cílit na produkty s growth margin</strong> - u Microsoft 365 E5, E7, Copilotu, bezpečnostních suit a Windows 365 můžete při splnění podmínek dosáhnout celkové marže 15 až 25 %. Postup najdete v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#0D4D4D;font-weight:bold;">Growth Margin v CSP</a>.</li>
+<li style="margin-bottom:10px;"><strong>Cílit na produkty s growth margin</strong> - u Microsoft 365 E5, E7, Copilotu, bezpečnostních suit a Windows 365 můžete při splnění podmínek dosáhnout celkové marže 15 až 25 %. Postup najdete v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#005758;font-weight:bold;">Growth Margin v CSP</a>.</li>
 <li style="margin-bottom:10px;"><strong>Převést menší firmy na Business balíčky</strong> - organizace do 300 uživatelů často na Office 365 E1 nebo samostatném Exchange Online zůstaly ze zvyku. Microsoft 365 Business Standard nebo Premium jim dá víc a vám otevře rozhovor o bezpečnosti a Copilotu.</li>
 <li style="margin-bottom:10px;"><strong>Sbalit samostatné služby</strong> - zákazník, který skládá Exchange Online, Apps for Business a dokoupené úložiště, bývá v kompletním balíčku lépe vybavený a vy máte jednodušší správu i fakturaci.</li>
 <li style="margin-bottom:10px;"><strong>Postavit hodnotu na službách</strong> - tam, kde se licence měnit nebudou, kompenzujte nižší marži vlastními službami: správou, zálohováním, bezpečnostním dohledem nebo školením.</li>
@@ -135,47 +136,47 @@ footer a:hover{color:var(--accent)}
 
 <p style="margin:0 0 32px 0;">Z mé zkušenosti nejhůř dopadají partneři, kteří změnu zaregistrují až při kontrole výsledků za čtvrtletí. Ti, kdo si seznam zasažených zákazníků vyjedou hned, mají dost času s každým z nich promluvit dřív, než přijde obnova.</p>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Často kladené otázky</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Často kladené otázky</h2>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Mění se cena pro zákazníka?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Mění se cena pro zákazníka?</p>
 <p style="margin:0;">Ne. Doporučenou koncovou cenu určuje Microsoft a zůstává stejná. Rozdíl nese partner v podobě nižší marže.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Týká se změna i Microsoft 365 E3, E5 nebo Business balíčků?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Týká se změna i Microsoft 365 E3, E5 nebo Business balíčků?</p>
 <p style="margin:0;">Ne. Snížení marže se vztahuje jen na produkty uvedené výše. Microsoft 365 suity ani Business balíčky na seznamu nejsou.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Můžu si ztrátu vyrovnat přes growth margins?</p>
-<p style="margin:0;">Na Office 365 E1 ani E3 ne. Growth margins se týkají vybraných strategických produktů a konkrétních růstových scénářů, například nového zákazníka na daném produktu nebo navýšení licencí. Vyplatí se proto hlavně tam, kde zákazníka posunete k vyššímu balíčku. Podrobnosti najdete v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#0D4D4D;font-weight:bold;">Growth Margin v CSP</a>.</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 14px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Můžu si ztrátu vyrovnat přes growth margins?</p>
+<p style="margin:0;">Na Office 365 E1 ani E3 ne. Growth margins se týkají vybraných strategických produktů a konkrétních růstových scénářů, například nového zákazníka na daném produktu nebo navýšení licencí. Vyplatí se proto hlavně tam, kde zákazníka posunete k vyššímu balíčku. Podrobnosti najdete v článku <a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#005758;font-weight:bold;">Growth Margin v CSP</a>.</p>
 </div>
 
-<div style="border:1px solid #d5e6e3;border-radius:12px;padding:18px 22px;margin:0 0 32px 0;">
-<p style="margin:0 0 8px 0;font-weight:bold;color:#0D4D4D;">Kde zjistím přesné nové ceny?</p>
+<div style="border:1px solid #D9D8D7;border-radius:12px;padding:18px 22px;margin:0 0 32px 0;">
+<p style="margin:0 0 8px 0;font-weight:bold;color:#005758;">Kde zjistím přesné nové ceny?</p>
 <p style="margin:0;">Aktuální nákupní ceny vidíte v platformě StreamOne ION. Pro srovnání variant a výpočet marže můžete použít náš NCE Kalkulátor.</p>
 </div>
 
-<h2 style="font-size:26px;color:#0D4D4D;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #1DB87E;">Užitečné odkazy</h2>
+<h2 style="font-size:26px;color:#005758;margin:40px 0 18px 0;padding-bottom:8px;border-bottom:3px solid #2D9F88;">Užitečné odkazy</h2>
 
 <ul style="margin:0 0 32px 0;padding-left:22px;">
-<li style="margin-bottom:8px;"><a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#0D4D4D;font-weight:bold;">Growth Margin v CSP: Jak získat vyšší marži od října 2026</a></li>
-<li style="margin-bottom:8px;"><a href="https://learn.microsoft.com/partner-center/pricing/growth-margins" style="color:#0D4D4D;font-weight:bold;">Growth margins - dokumentace Microsoftu</a></li>
-<li style="margin-bottom:8px;"><a href="https://learn.microsoft.com/partner-center/announcements/2026-august" style="color:#0D4D4D;font-weight:bold;">Prodloužení promoakcí na Microsoft 365 E3</a></li>
-<li style="margin-bottom:8px;"><a href="https://ion.tdsynnex.com" style="color:#0D4D4D;font-weight:bold;">StreamOne ION</a></li>
-<li style="margin-bottom:8px;"><a href="https://tdsynnexcz.github.io/nce-kalkulator/" style="color:#0D4D4D;font-weight:bold;">NCE Kalkulátor TD SYNNEX</a></li>
+<li style="margin-bottom:8px;"><a href="2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z.html" style="color:#005758;font-weight:bold;">Growth Margin v CSP: Jak získat vyšší marži od října 2026</a></li>
+<li style="margin-bottom:8px;"><a href="https://learn.microsoft.com/partner-center/pricing/growth-margins" style="color:#005758;font-weight:bold;">Growth margins - dokumentace Microsoftu</a></li>
+<li style="margin-bottom:8px;"><a href="https://learn.microsoft.com/partner-center/announcements/2026-august" style="color:#005758;font-weight:bold;">Prodloužení promoakcí na Microsoft 365 E3</a></li>
+<li style="margin-bottom:8px;"><a href="https://ion.tdsynnex.com" style="color:#005758;font-weight:bold;">StreamOne ION</a></li>
+<li style="margin-bottom:8px;"><a href="https://tdsynnexcz.github.io/nce-kalkulator/" style="color:#005758;font-weight:bold;">NCE Kalkulátor TD SYNNEX</a></li>
 </ul>
 
-<div style="background:linear-gradient(135deg,#0D4D4D 0%,#1DB87E 100%);border-radius:14px;padding:32px 28px;color:#ffffff;">
+<div style="background:linear-gradient(135deg,#003031 0%,#005758 100%);border-radius:14px;padding:32px 28px;color:#ffffff;">
 <p style="margin:0 0 10px 0;font-size:22px;font-weight:bold;color:#ffffff;">Chcete vědět, kterých zákazníků se změna týká?</p>
 <p style="margin:0 0 20px 0;color:#ffffff;">Rádi s vámi projdeme vaši zákaznickou základnu, dopad na marži i možnosti upgradu na vyšší balíčky.</p>
-<a href="mailto:microsoft.cz@tdsynnex.com" style="display:inline-block;background:#ffffff;color:#0D4D4D;font-weight:bold;text-decoration:none;padding:12px 24px;border-radius:8px;">Napište nám na microsoft.cz@tdsynnex.com</a>
+<a href="mailto:microsoft.cz@tdsynnex.com" style="display:inline-block;background:#ffffff;color:#005758;font-weight:bold;text-decoration:none;padding:12px 24px;border-radius:8px;">Napište nám na microsoft.cz@tdsynnex.com</a>
 </div>
 
 </div>
 </article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>

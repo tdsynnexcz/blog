@@ -5,43 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft 365 Copilot pro neziskovky: aktualizace marže pro partnery – Blog TD SYNNEX CZ</title>
 <meta name="description" content="Microsoft aktualizoval partnerskou marži u Microsoft 365 Copilot pro neziskovky, zpětně od 1. července 2026. Cena pro zákazníka se nemění.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+:root{--tds-deep-teal:#003031;--tds-teal:#005758;--tds-green:#2D9F88;--tds-aqua:#08BED5;--tds-white:#FFFFFF;--tds-cloud-white:#FFFFF6;--tds-light-grey:#F0F0F0;--tds-cool-grey:#D9D8D7;--ink:#003031;--muted:#4A5556;--tds-font:"TWK Everett",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--tds-font);background:var(--tds-light-grey);color:var(--ink);line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--tds-deep-teal) 0%,var(--tds-teal) 100%);color:#fff;padding:32px 24px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--tds-green) 0%,transparent 70%);opacity:.28;pointer-events:none}
+.hero-inner{max-width:712px;margin:0 auto;position:relative;z-index:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.topbar img{display:block;width:180px;min-width:100px;height:auto}
+.back{display:inline-flex;align-items:center;gap:6px;color:#D7E6E4;text-decoration:none;font-size:.88rem;font-weight:700;transition:color .15s}
 .back:hover{color:#fff}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
-.meta{color:#9ecfc7;font-size:.9rem}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;margin-bottom:16px}
+.hero h1{font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:12px}
+.meta{color:#D7E6E4;font-size:.92rem}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-40px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(0,48,49,.18)}
 .cover img{width:100%;display:block;max-height:420px;object-fit:cover}
-.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
-.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article{background:var(--tds-white);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(0,48,49,.06);border:1px solid var(--tds-cool-grey)}
+.article h1,.article h2,.article h3{font-weight:700;color:var(--tds-teal);margin:1.2em 0 .5em;line-height:1.25}
 .article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
 .article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
-.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
-.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--tds-green);padding:.6em 1em;margin:1em 0;background:var(--tds-light-grey);color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--tds-teal);font-weight:700}.article a:hover{color:var(--tds-deep-teal)}
 .article img{max-width:100%;border-radius:8px;margin:1em 0}
-.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
-.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre{background:var(--tds-deep-teal);color:#fff;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:var(--tds-light-grey);padding:2px 6px;border-radius:4px;font-size:.88em}
 .article pre code{background:none;padding:0}
-footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
-footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
-footer a:hover{color:var(--accent)}
-@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+footer{max-width:760px;margin:0 auto;text-align:left;padding:8px 24px 48px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer a{color:var(--tds-teal);font-weight:700;text-decoration:none}
+footer a:hover{color:var(--tds-deep-teal)}
+footer img{display:block;width:260px;height:auto}
+@media(max-width:560px){.article div[style*="grid-template-columns"]{grid-template-columns:1fr!important}.hero{padding:28px 16px 64px}.wrap{padding:0 16px}.article{padding:24px 18px}.topbar img{width:150px}footer img{width:220px}}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="hero-inner">
-    <a href="../" class="back">← Zpět na blog</a>
+    <div class="topbar"><a href="../" aria-label="TD SYNNEX - blog"><img src="../assets/brand/logo-aqua-white.png" alt="TD SYNNEX" width="180"></a><a href="../" class="back">← Zpět na blog</a></div>
     <div class="badge">Microsoft</div>
     <h1>Microsoft 365 Copilot pro neziskovky: aktualizace marže pro partnery</h1>
     <div class="meta">27. července 2026 · Microsoft aktualizoval partnerskou marži u Microsoft 365 Copilot pro neziskovky, zpětně od 1. července 2026. Cena pro zákazníka se nemění.</div>
@@ -49,11 +50,11 @@ footer a:hover{color:var(--accent)}
 </header>
 <main class="wrap">
   <div class="cover"><img src="../assets/images/nonprofit.png" alt="Microsoft 365 Copilot pro neziskovky: aktualizace marže pro partnery"></div>
-  <article class="article"><div style="font-family:Arial, Helvetica, sans-serif; color:#3c4a4b; max-width:800px; margin:0 auto; line-height:1.65;">
+  <article class="article"><div style="font-family:Arial,Helvetica,sans-serif; color:#1F2A2B; max-width:800px; margin:0 auto; line-height:1.65;">
 
   <!-- PEREX -->
-  <div style="background:#f2f9fb; border-left:4px solid #08BED5; border-radius:8px; padding:20px 24px; margin-bottom:28px;">
-    <p style="margin:0; font-size:16px; color:#0f1b2d;">
+  <div style="background:#F0F0F0; border-left:4px solid #005758; border-radius:8px; padding:20px 24px; margin-bottom:28px;">
+    <p style="margin:0; font-size:16px; color:#003031;">
       Microsoft upravil marži u nonprofit nabídky <strong>Microsoft 365 Copilot</strong>, a to zpětně k 1. červenci 2026. Pokud prodáváte tento produkt neziskovým organizacím přes CSP, aktuálně nemusíte vidět v Partner Center ještě správnou hodnotu - naplno se projeví až v srpnovém ceníku. Nic vás to ale nestojí žádnou práci navíc.
     </p>
   </div>
@@ -62,12 +63,12 @@ footer a:hover{color:var(--accent)}
   <p>Pokud spravujete i zákazníky z neziskového sektoru, tenhle článek je hlavně pro vás. Řešíte teď objednávku Microsoft 365 Copilot pro nadaci nebo spolek a v Partner Center vám nesedí marže, kterou jste čekali? Nejde o chybu na vaší straně - Microsoft mezitím upravuje výpočet marže u tohoto konkrétního produktu, a systém to ještě plně nezobrazuje.</p>
 
   <!-- SECTION 1 -->
-  <h2 style="color:#0f1b2d; font-size:22px; margin-top:36px; border-bottom:3px solid #08BED5; display:inline-block; padding-bottom:6px;">Co přesně se mění</h2>
+  <h2 style="color:#003031; font-size:22px; margin-top:36px; border-bottom:3px solid #005758; display:inline-block; padding-bottom:6px;">Co přesně se mění</h2>
   <p>Microsoft aktualizoval partnerskou marži u nonprofit nabídky Microsoft 365 Copilot. Změna platí zpětně od <strong>1. července 2026</strong>, přestože se v cenových a fakturačních přehledech zatím může zobrazovat starší hodnota. Naplno se má promítnout do <strong>srpnového ceníku 2026</strong>.</p>
   <p>Jde výhradně o úpravu marže mezi Microsoftem a partnery - <strong>funkčnost produktu, cena pro koncového zákazníka, podmínky způsobilosti, service plány ani nároky zákazníků se nijak nemění.</strong> Neziskovka tedy nadále platí stejnou cenu a dostává stejný produkt jako dřív.</p>
 
   <!-- SECTION 2 -->
-  <h2 style="color:#0f1b2d; font-size:22px; margin-top:36px; border-bottom:3px solid #08BED5; display:inline-block; padding-bottom:6px;">Kterého produktu se to týká</h2>
+  <h2 style="color:#003031; font-size:22px; margin-top:36px; border-bottom:3px solid #005758; display:inline-block; padding-bottom:6px;">Kterého produktu se to týká</h2>
   <p>Změna se vztahuje na jeden konkrétní SKU:</p>
   <ul style="padding-left:20px;">
     <li style="margin-bottom:10px;"><strong>Produkt:</strong> Microsoft 365 Copilot</li>
@@ -78,50 +79,50 @@ footer a:hover{color:var(--accent)}
   <p>Pokud tento konkrétní produkt neprodáváte, novinka se vás netýká. Pokud ano, stačí vědět, že se marže časem sama dorovná.</p>
 
   <!-- SECTION 3 -->
-  <h2 style="color:#0f1b2d; font-size:22px; margin-top:36px; border-bottom:3px solid #08BED5; display:inline-block; padding-bottom:6px;">Jak to bude probíhat v praxi</h2>
+  <h2 style="color:#003031; font-size:22px; margin-top:36px; border-bottom:3px solid #005758; display:inline-block; padding-bottom:6px;">Jak to bude probíhat v praxi</h2>
   <p>Po zveřejnění srpnového ceníku Microsoft automaticky uplatní upravenou marži na všechny způsobilé nákupy tohoto produktu uskutečněné od 1. července 2026. Případné rozdíly ve fakturaci se pak promítnou do některého z následujících fakturačních období - nejde tedy o okamžitou opravu, ale o doúčtování zpětně.</p>
   <p>Aktualizovaná marže se následně objeví i v přehledech cen, fakturace a zákaznických workspace v Partner Center.</p>
 
   <!-- TIP BOX -->
-  <div style="border:2px solid #005758; border-radius:8px; padding:18px 22px; margin:30px 0; background:#f7fbfb;">
-    <p style="margin:0; color:#0f1b2d;"><strong>Pozor -</strong> žádnou akci z vaší strany tahle změna nevyžaduje. Stávající předplatná běží bez přerušení a nemusíte nic přeobjednávat ani měnit. Jediné, co doporučujeme, je nezlekat se dočasně nesedícího čísla v přehledu marže - dorovná se samo.</p>
+  <div style="border:2px solid #005758; border-radius:8px; padding:18px 22px; margin:30px 0; background:#F0F0F0;">
+    <p style="margin:0; color:#003031;"><strong>Pozor -</strong> žádnou akci z vaší strany tahle změna nevyžaduje. Stávající předplatná běží bez přerušení a nemusíte nic přeobjednávat ani měnit. Jediné, co doporučujeme, je nezlekat se dočasně nesedícího čísla v přehledu marže - dorovná se samo.</p>
   </div>
 
   <!-- SECTION 4 -->
-  <h2 style="color:#0f1b2d; font-size:22px; margin-top:36px; border-bottom:3px solid #08BED5; display:inline-block; padding-bottom:6px;">Co si z toho odnést</h2>
+  <h2 style="color:#003031; font-size:22px; margin-top:36px; border-bottom:3px solid #005758; display:inline-block; padding-bottom:6px;">Co si z toho odnést</h2>
   <p>Tahle novinka nemění nic na tom, jak Microsoft 365 Copilot pro neziskovky prodáváte nebo komunikujete zákazníkům - je to čistě záležitost mezi Microsoftem, distributorem a partnerem. Přesto se vyplatí o ní vědět, hlavně pokud si v uplynulých týdnech všimli nesrovnalosti v marži a chtěli by se na to zeptat. Teď už máte jasnou odpověď - a víte, že se čísla srovnají po zveřejnění srpnového ceníku.</p>
 
   <!-- FAQ -->
-  <h2 style="color:#0f1b2d; font-size:22px; margin-top:40px; border-bottom:3px solid #08BED5; display:inline-block; padding-bottom:6px;">Časté otázky</h2>
+  <h2 style="color:#003031; font-size:22px; margin-top:40px; border-bottom:3px solid #005758; display:inline-block; padding-bottom:6px;">Časté otázky</h2>
 
-  <div style="border:1px solid #d9e6e6; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
-    <p style="margin:0 0 6px 0; color:#0b5cab; font-weight:bold;">Musím kvůli téhle změně něco udělat?</p>
+  <div style="border:1px solid #D9D8D7; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
+    <p style="margin:0 0 6px 0; color:#005758; font-weight:bold;">Musím kvůli téhle změně něco udělat?</p>
     <p style="margin:0;">Ne. Microsoft výslovně uvádí, že žádná akce partnera není potřeba.</p>
   </div>
 
-  <div style="border:1px solid #d9e6e6; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
-    <p style="margin:0 0 6px 0; color:#0b5cab; font-weight:bold;">Zaplatí zákazník za Copilota jinou cenu?</p>
+  <div style="border:1px solid #D9D8D7; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
+    <p style="margin:0 0 6px 0; color:#005758; font-weight:bold;">Zaplatí zákazník za Copilota jinou cenu?</p>
     <p style="margin:0;">Ne, cena pro koncového zákazníka, funkčnost ani podmínky produktu se nemění. Upravuje se pouze marže mezi Microsoftem a partnerem.</p>
   </div>
 
-  <div style="border:1px solid #d9e6e6; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
-    <p style="margin:0 0 6px 0; color:#0b5cab; font-weight:bold;">Od kdy změna platí a kdy ji uvidím v Partner Center?</p>
+  <div style="border:1px solid #D9D8D7; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
+    <p style="margin:0 0 6px 0; color:#005758; font-weight:bold;">Od kdy změna platí a kdy ji uvidím v Partner Center?</p>
     <p style="margin:0;">Platí zpětně od 1. července 2026, ale plně se projeví až po zveřejnění srpnového ceníku 2026. Případné rozdíly ve fakturaci se objeví v některém z následujících fakturačních období.</p>
   </div>
 
-  <div style="border:1px solid #d9e6e6; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
-    <p style="margin:0 0 6px 0; color:#0b5cab; font-weight:bold;">Týká se to i jiných produktů Microsoft 365 Copilot?</p>
+  <div style="border:1px solid #D9D8D7; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
+    <p style="margin:0 0 6px 0; color:#005758; font-weight:bold;">Týká se to i jiných produktů Microsoft 365 Copilot?</p>
     <p style="margin:0;">Ne, aktualizace se týká výhradně SKU Microsoft 365 Copilot (Non-Profit Pricing) s Product ID CFQ7TTC0MM8R a SKU ID 000T.</p>
   </div>
 
   <!-- CTA -->
-  <div style="background:linear-gradient(135deg, #0b5cab, #005758); border-radius:10px; padding:26px 30px; margin-top:36px; text-align:center;">
+  <div style="background:linear-gradient(135deg,#003031 0%,#005758 100%); border-radius:10px; padding:26px 30px; margin-top:36px; text-align:left;">
     <p style="color:#ffffff; font-size:17px; margin:0 0 14px 0;">Máte zákazníka z neziskového sektoru a chcete si ověřit marži nebo nastavení objednávky?</p>
-    <a href="mailto:microsoft.cz@tdsynnex.com" style="background:#08BED5; color:#0f1b2d; text-decoration:none; font-weight:bold; padding:10px 24px; border-radius:6px; display:inline-block;">Napište nám na microsoft.cz@tdsynnex.com</a>
+    <a href="mailto:microsoft.cz@tdsynnex.com" style="background:#FFFFFF; color:#003031; text-decoration:none; font-weight:bold; padding:10px 24px; border-radius:6px; display:inline-block;">Napište nám na microsoft.cz@tdsynnex.com</a>
   </div>
 
 </div></article>
 </main>
-<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+<footer><span>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></span><img src="../assets/brand/software-solutions-rgb.png" alt="TD SYNNEX | Software Solutions" width="260"></footer>
 </body>
 </html>
