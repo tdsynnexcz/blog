@@ -34,5 +34,158 @@
     "perex": "Od 1. prosince mají nové licence Copilot Business v CSP zapnutou platbu za spotřebu s limitem 4 000 kreditů na uživatele. Co to znamená pro partnery?",
     "image": "assets/images/copilot-business-ubb.png",
     "slug": "2026-09-30-copilot-business-platba-za-spotrebu-od-1-12-2026"
+  },
+  {
+    "id": "2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z",
+    "title": "Konec jedné marže pro všechny: Microsoft v CSP zavádí bonus za růst zákazníků",
+    "vendor": "Microsoft",
+    "date": "2026-09-11",
+    "perex": "Od října 2026 platí v CSP nový model marží: Base + Growth Margin. Jak growth margin funguje, tři cesty k jejímu získání a časté chyby partnerů.",
+    "image": "assets/images/growth.png",
+    "slug": "2026-09-11-konec-jedne-marze-pro-vsechny-microsoft-v-csp-zavadi-bonus-z"
+  },
+  {
+    "id": "2026-09-11-mesicni-platby-za-csp-software-podrazi-o-5-co-ceka-vase-zaka",
+    "title": "Měsíční platby za CSP software podraží o 5 %. Co čeká vaše zákazníky od října 2026",
+    "vendor": "Microsoft",
+    "date": "2026-09-11",
+    "perex": "Microsoft od 1. října 2026 zavádí 5% navýšení u CSP software s ročním závazkem a měsíční fakturací. Azure ani roční platby nejsou dotčeny.",
+    "image": "assets/images/uplift.png",
+    "slug": "2026-09-11-mesicni-platby-za-csp-software-podrazi-o-5-co-ceka-vase-zaka"
+  },
+  {
+    "id": "2026-09-11-trial-copilotu-uz-nemusi-byt-hadani-microsoft-dal-kazdemu-uz",
+    "title": "Trial Copilotu už nemusí být hádání - Microsoft dal každému uživateli vlastní plán na 30 dní",
+    "vendor": "Microsoft",
+    "date": "2026-09-11",
+    "perex": "Copilot Success Planner dá každému z 25 uživatelů trialu vlastní 30denní plán a administrátorovi přehlednou roadmapu pro konverzní rozhovor.",
+    "image": "assets/images/planner.png",
+    "slug": "2026-09-11-trial-copilotu-uz-nemusi-byt-hadani-microsoft-dal-kazdemu-uz"
+  },
+  {
+    "id": "2026-09-04-td-synnex-empower-kompletni-prehled-podzimnich-skoleni-pro-p",
+    "title": "TD SYNNEX Empower: kompletní přehled podzimních školení pro partnery (a všechno je zdarma)",
+    "vendor": "Microsoft",
+    "date": "2026-09-04",
+    "perex": "TD SYNNEX Empower nabízí od září do prosince desítky bezplatných školení k Copilotu, bezpečnosti a Azure. Podívejte se na termíny a vyberte si to své.",
+    "image": "assets/images/empower.png",
+    "slug": "2026-09-04-td-synnex-empower-kompletni-prehled-podzimnich-skoleni-pro-p"
+  },
+  {
+    "id": "2026-07-27-microsoft-365-copilot-pro-neziskovky-aktualizace-marze-pro-p",
+    "title": "Microsoft 365 Copilot pro neziskovky: aktualizace marže pro partnery",
+    "vendor": "Microsoft",
+    "date": "2026-07-27",
+    "perex": "Microsoft aktualizoval partnerskou marži u Microsoft 365 Copilot pro neziskovky, zpětně od 1. července 2026. Cena pro zákazníka se nemění.",
+    "image": "assets/images/nonprofit.png",
+    "slug": "2026-07-27-microsoft-365-copilot-pro-neziskovky-aktualizace-marze-pro-p"
+  },
+  {
+    "id": "2026-07-27-mai-cyber-1-flash-novy-bezpecnostni-model-microsoftu-v-kostc",
+    "title": "MAI-Cyber-1-Flash: nový bezpečnostní model Microsoftu v kostce",
+    "vendor": "Microsoft",
+    "date": "2026-07-27",
+    "perex": "Microsoft spustil MAI-Cyber-1-Flash - AI model zabudovaný do MDASH, který hledá a opravuje zranitelnosti v kódu levněji než dřív. Co to znamená pro partnery.",
+    "image": "assets/images/maicyber.png",
+    "slug": "2026-07-27-mai-cyber-1-flash-novy-bezpecnostni-model-microsoftu-v-kostc"
+  },
+  {
+    "id": "2026-07-23-microsoft-fy27-co-partnerum-prinesl-mcaps-start",
+    "title": "Microsoft FY27: co partnerům přinesl MCAPS Start",
+    "vendor": "Microsoft",
+    "date": "2026-07-23",
+    "perex": "Microsoft na MCAPS Start for Partners představil FY27 - novou ekonomiku CSP, Copilot Business Trial od srpna i roli AI agentů. Co to znamená pro vás jako partnera.",
+    "image": "assets/images/mcaps.png",
+    "slug": "2026-07-23-microsoft-fy27-co-partnerum-prinesl-mcaps-start"
+  },
+  {
+    "id": "2026-07-17-copilot-na-30-dni-zdarma-nova-cesta-jak-privest-zakazniky-k-",
+    "title": "Copilot na 30 dní zdarma: nová cesta, jak přivést zákazníky k umělé inteligenci",
+    "vendor": "Microsoft",
+    "date": "2026-07-17",
+    "perex": "Od 1. srpna nabízí CSP novou zkušební licenci Microsoft 365 Copilot Business pro 25 uživatelů na 30 dní. Jak ji využít u zákazníků.",
+    "image": "assets/images/trial.png",
+    "slug": "2026-07-17-copilot-na-30-dni-zdarma-nova-cesta-jak-privest-zakazniky-k-"
+  },
+  {
+    "id": "2026-07-09-10-duvodu-proc-prejit-z-business-basic-standard-nebo-premium",
+    "title": "10 důvodů, proč přejít z Business Basic, Standard nebo Premium na bundle s Copilotem",
+    "vendor": "Microsoft",
+    "date": "2026-07-09",
+    "perex": "Od 1. 7. 2026 zdražují samostatné plány Microsoft 365, bundly s Copilotem ale zůstávají na stejné ceně natrvalo. 10 argumentů pro upsell.",
+    "image": "assets/images/duvody.png",
+    "slug": "2026-07-09-10-duvodu-proc-prejit-z-business-basic-standard-nebo-premium"
+  },
+  {
+    "id": "2026-07-08-microsoft-promo-akce-v-kostce-kompletni-prehled-aktualnich-s",
+    "title": "Microsoft promo akce v kostce: kompletní přehled aktuálních slev pro CSP partnery",
+    "vendor": "Microsoft",
+    "date": "2026-07-08",
+    "perex": "Souhrn aktuálních promo akcí Microsoftu pro CSP partnery - přehledná tabulka se slevami, podmínkami i minimálním počtem licencí.",
+    "image": "assets/images/promo.png",
+    "slug": "2026-07-08-microsoft-promo-akce-v-kostce-kompletni-prehled-aktualnich-s"
+  },
+  {
+    "id": "2026-06-24-copilot-cowork-je-obecne-dostupny-co-to-znamena-pro-smb",
+    "title": "Copilot Cowork je obecně dostupný - co to znamená pro SMB",
+    "vendor": "Microsoft",
+    "date": "2026-06-24",
+    "perex": "Microsoft uvolnil Copilot Cowork pro všechny. Co reálně dělá, jak se účtuje podle spotřeby a proč se týká i edice Copilot Business.",
+    "image": "assets/images/cowork.png",
+    "slug": "2026-06-24-copilot-cowork-je-obecne-dostupny-co-to-znamena-pro-smb"
+  },
+  {
+    "id": "2026-06-03-microsoft-365-s-copilotem-pro-smb-proc-je-ted-ten-spravny-ca",
+    "title": "Microsoft 365 s Copilotem pro SMB: proč je teď ten správný čas jednat",
+    "vendor": "Microsoft",
+    "date": "2026-06-03",
+    "perex": "Od 1. 7. 2026 se mění ceny Microsoft 365, ale bundle edice Business Standard s Copilotem zůstává výhodná. Přehled trvalých cen i promo.",
+    "image": "assets/images/smb.png",
+    "slug": "2026-06-03-microsoft-365-s-copilotem-pro-smb-proc-je-ted-ten-spravny-ca"
+  },
+  {
+    "id": "2026-05-25-adobe-od-1-6-2026-dve-zasadni-zmeny-v-cenotvorbe-pro-komercn",
+    "title": "Adobe od 1. 6. 2026: dvě zásadní změny v cenotvorbě pro komerční zákazníky",
+    "vendor": "Adobe",
+    "date": "2026-05-25",
+    "perex": "Adobe od 1. 6. 2026 mění marži kanálu a snižuje slevové levely u VIP Marketplace. Přehled změn pro komerční zákazníky a partnery TD SYNNEX.",
+    "image": "assets/images/adobe.png",
+    "slug": "2026-05-25-adobe-od-1-6-2026-dve-zasadni-zmeny-v-cenotvorbe-pro-komercn"
+  },
+  {
+    "id": "2026-05-25-co-se-deje-v-copilotu-flex-routing-anthropic-modely-a-sprava",
+    "title": "Co se děje v Copilotu: Flex routing, Anthropic modely a správa agentů",
+    "vendor": "Microsoft",
+    "date": "2026-05-25",
+    "perex": "Co znamená Flex routing pro EU zákazníky, jak fungují Anthropic modely v Copilotu a proč Agent 365 mění správu AI agentů. Přehled pro partnery.",
+    "image": "assets/images/flex.png",
+    "slug": "2026-05-25-co-se-deje-v-copilotu-flex-routing-anthropic-modely-a-sprava"
+  },
+  {
+    "id": "2026-05-06-microsoft-v-kvetnu-agenti-nastupuji-do-prace-a-tentokrat-to-",
+    "title": "Microsoft v květnu: agenti nastupují do práce. A tentokrát to myslí vážně",
+    "vendor": "Microsoft",
+    "date": "2026-05-06",
+    "perex": "Agent 365, M365 E7, Windows 365 for Agents a Legal Agent ve Wordu - největší novinky Microsoftu z května 2026 a co z nich plyne pro CSP partnery.",
+    "image": "assets/images/kveten.png",
+    "slug": "2026-05-06-microsoft-v-kvetnu-agenti-nastupuji-do-prace-a-tentokrat-to-"
+  },
+  {
+    "id": "2026-04-12-microsoft-365-e7-novy-vrchol-licencniho-baliku-ktery-spojuje",
+    "title": "Microsoft 365 E7: nový vrchol licenčního balíku, který spojuje vše, co enterprise firmy potřebují",
+    "vendor": "Microsoft",
+    "date": "2026-04-12",
+    "perex": "Microsoft 365 E7 spojuje E5, Entra Suite, Copilot a Agent 365 v jednom balíku. Dostupný od 1. května 2026 v CSP se slevami až 15 %.",
+    "image": "assets/images/e7.png",
+    "slug": "2026-04-12-microsoft-365-e7-novy-vrchol-licencniho-baliku-ktery-spojuje"
+  },
+  {
+    "id": "2026-04-12-mate-zakazniky-na-microsoft-365-business-premium-pak-jim-pra",
+    "title": "Máte zákazníky na Microsoft 365 Business Premium? Pak jim pravděpodobně prodáváte jen polovinu toho, co potřebují",
+    "vendor": "Microsoft",
+    "date": "2026-04-12",
+    "perex": "Defender Suite a Purview Suite mění pravidla hry pro SMB zákazníky na Microsoft 365 Business Premium. Jeden vendor, jedna konzole, žádné třetí strany.",
+    "image": "assets/images/bp.png",
+    "slug": "2026-04-12-mate-zakazniky-na-microsoft-365-business-premium-pak-jim-pra"
   }
 ]

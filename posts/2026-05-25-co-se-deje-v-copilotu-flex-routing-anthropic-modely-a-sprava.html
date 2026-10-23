@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Co se děje v Copilotu: Flex routing, Anthropic modely a správa agentů – Blog TD SYNNEX CZ</title>
+<meta name="description" content="Co znamená Flex routing pro EU zákazníky, jak fungují Anthropic modely v Copilotu a proč Agent 365 mění správu AI agentů. Přehled pro partnery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--darkTeal:#0D4D4D;--teal-deep:#082f2f;--accent:#1DB87E;--ink:#14201f;--muted:#5d6e6c;--card:#fff;--bg:#f4f6f5;--line:#e2e8e6}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(150deg,var(--darkTeal) 0%,var(--teal-deep) 100%);color:#fff;padding:44px 24px 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18;pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
+.back{display:inline-flex;align-items:center;gap:6px;color:#9ecfc7;text-decoration:none;font-size:.88rem;font-weight:600;margin-bottom:16px;transition:color .15s}
+.back:hover{color:#fff}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:#e8f2fd;color:#0078d4;margin-bottom:14px}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.12;margin-bottom:10px}
+.meta{color:#9ecfc7;font-size:.9rem}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.cover{width:100%;border-radius:12px;overflow:hidden;margin:-32px auto 0;position:relative;z-index:2;box-shadow:0 8px 28px rgba(13,77,77,.15)}
+.cover img{width:100%;display:block;max-height:420px;object-fit:cover}
+.article{background:var(--card);border-radius:12px;padding:36px 40px;margin:24px 0 60px;box-shadow:0 2px 12px rgba(13,77,77,.06);border:1px solid var(--line)}
+.article h1,.article h2,.article h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:1.2em 0 .5em;line-height:1.25}
+.article h1{font-size:1.6rem}.article h2{font-size:1.3rem}.article h3{font-size:1.1rem}
+.article p{margin-bottom:.9em}.article ul,.article ol{padding-left:1.5em;margin-bottom:.9em}
+.article li{margin-bottom:.3em}.article blockquote{border-left:4px solid var(--accent);padding:.6em 1em;margin:1em 0;background:#f8fffe;color:var(--muted);border-radius:0 6px 6px 0}
+.article a{color:var(--darkTeal);font-weight:500}.article a:hover{color:var(--accent)}
+.article img{max-width:100%;border-radius:8px;margin:1em 0}
+.article pre{background:#1e2a29;color:#cfe3df;padding:1em 1.2em;border-radius:8px;overflow-x:auto;font-size:.88rem;margin:1em 0}
+.article code{background:#f0f5f4;padding:2px 6px;border-radius:4px;font-size:.88em}
+.article pre code{background:none;padding:0}
+footer{text-align:center;padding:32px 24px;color:var(--muted);font-size:.85rem}
+footer a{color:var(--darkTeal);font-weight:500;text-decoration:none}
+footer a:hover{color:var(--accent)}
+@media(max-width:560px){.hero{padding:36px 20px 56px}.article{padding:24px 20px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <a href="../" class="back">← Zpět na blog</a>
+    <div class="badge">Microsoft</div>
+    <h1>Co se děje v Copilotu: Flex routing, Anthropic modely a správa agentů</h1>
+    <div class="meta">25. května 2026 · Co znamená Flex routing pro EU zákazníky, jak fungují Anthropic modely v Copilotu a proč Agent 365 mění správu AI agentů. Přehled pro partnery.</div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="cover"><img src="../assets/images/flex.png" alt="Co se děje v Copilotu: Flex routing, Anthropic modely a správa agentů"></div>
+  <article class="article"><div style="font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a; max-width: 820px; margin: 0 auto; line-height: 1.75; font-size: 17px;">
+
+  <!-- INTRO BOX -->
+  <div style="background: #f0f4ff; border-left: 4px solid #2563eb; padding: 20px 24px; border-radius: 4px; margin-bottom: 36px;">
+    <p style="margin: 0; font-size: 15px; color: #374151;">Tento článek shrnuje několik prakticky důležitých novinek z oblasti Microsoft 365 Copilota - konkrétně Flex routing, Anthropic modely přímo v Copilotu, nový doplněk Claude pro M365 a konsolidaci správy agentů do Agent 365. Žádné hype, jen věci, na které se vás zákazníci budou ptát.</p>
+  </div>
+
+  <!-- PEREX -->
+  <p>Posledních několik týdnů přineslo v oblasti Microsoft 365 Copilota řadu změn, které na první pohled vypadají jako technické detaily - ale při bližším pohledu mají přímý dopad na to, jak zákazníci pracují s daty, kde se tato data zpracovávají a co jako partneři musíte vědět dřív, než se vás na to zeptají.</p>
+
+  <p>Zaměřím se na čtyři konkrétní oblasti: Flex routing, Anthropic modely v Copilotu, Claude jako doplněk pro Microsoft 365 a správu agentů přes Agent 365. Každá z nich přináší jiný typ otázek - a jiný typ rizik.</p>
+
+  <!-- SECTION 1 -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; color: #111;">Flex routing: data zůstávají v EU, zpracování nemusí</h2>
+
+  <p>Flex routing je funkce, která umožňuje, aby se zpracování AI požadavků - technicky tzv. inferencing, tedy moment, kdy Copilot reálně "myslí" nad dotazem - dočasně přesunulo mimo EU Data Boundary. Děje se to při špičkovém zatížení, aby Copilot fungoval plynule a bez výpadků.</p>
+
+  <p>Zjednodušeně: vaše data jsou uložená v EU a tam také zůstanou. Samotné zpracování ale může při vysokém provozu proběhnout jinde - v USA, Kanadě nebo Austrálii. Microsoft garantuje šifrování během přenosu i v úložišti, mimo EU putuje pouze část metadat v pseudonymizované podobě.</p>
+
+  <!-- INFO BOX -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0;">
+    <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; padding: 18px;">
+      <div style="font-weight: 700; margin-bottom: 8px; color: #111;">Bez Flex routingu</div>
+      <div style="font-size: 15px; color: #374151;">Data i zpracování zůstávají v EU Data Boundary. Plná kontrola, ale vyšší riziko výpadků při špičce.</div>
+    </div>
+    <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; padding: 18px;">
+      <div style="font-weight: 700; margin-bottom: 8px; color: #111;">S Flex routingem</div>
+      <div style="font-size: 15px; color: #374151;">Data v EU, zpracování může při špičce proběhnout mimo. Lepší výkon a stabilita pro většinu zákazníků.</div>
+    </div>
+  </div>
+
+  <p>Co je ale klíčové pro praxi: Flex routing je u nových tenantů od konce dubna <strong>zapnutý ve výchozím stavu</strong>. Administrátor ho může ponechat nebo vypnout v Admin Centru. Pro většinu zákazníků to není problém - pro ty z finančního sektoru, zdravotnictví nebo veřejné správy, kde platí přísné požadavky DORA, NIS2 nebo interní politiky, to vyžaduje vědomé rozhodnutí. Nikoli paniku, ale posouzení.</p>
+
+  <!-- WARNING BOX -->
+  <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 18px 22px; border-radius: 4px; margin: 28px 0;">
+    <strong>Pozor - na co upozornit zákazníky:</strong> Flex routing nevypne nikdo automaticky. Pokud zákazník pracuje v regulovaném prostředí a má na zpracování dat striktní požadavky, musí administrátor nastavení aktivně změnit. Výchozí stav = zapnuto.
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; color: #111;">Anthropic modely v Copilotu: výkon výměnou za EU hranici</h2>
+
+  <p>Microsoft 365 Copilot nově umožňuje zákazníkům v EU, EFTA a UK používat modely od Anthropicu - konkrétně třeba Claude - přímo uvnitř Copilota v aplikacích jako Word, Excel nebo PowerPoint. Tady se ale situace liší od Flex routingu podstatně.</p>
+
+  <p>Zatímco Flex routing přesouvá zpracování mimo EU jen výjimečně a za konkrétních podmínek, Anthropic modely <strong>vždy zpracovávají data mimo EU Data Boundary</strong> - bez výjimky, pokaždé, kdy je zákazník použije. Není to chyba, je to vlastnost - a zákazník si ji musí vědomě zvolit.</p>
+
+  <p>Administrátor musí tuto možnost nejprve ručně povolit v Admin Centru. Ve výchozím stavu je pro EU tenanty <strong>vypnuto</strong>. Anthropic v tomto modelu funguje jako tzv. Microsoft sub-processor, takže platí Podmínky produktů Microsoft a DPA - ale lokace zpracování je mimo EU by design, ne jen při špičce.</p>
+
+  <!-- PULL QUOTE -->
+  <div style="border-left: 3px solid #6b7280; padding: 14px 22px; margin: 32px 0; font-style: italic; color: #374151; font-size: 18px;">
+    "Zákazník si musí zvolit mezi lepšími výsledky a tím, kde jeho data reálně zpracovává AI. Obojí zároveň momentálně nejde."
+  </div>
+
+  <p>Praktický dopad pro partnery: pokud zákazník požaduje maximální výkon bez ohledu na zpracovatelský model, Anthropic modely jsou legitimní volba. Pokud ale datová suverenita a EU hranice patří mezi pevné požadavky, tato funkce prostě není pro něj - a je dobré to říct rovnou.</p>
+
+  <!-- SECTION 3 -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; color: #111;">Claude jako doplněk pro M365: co umí a kde nestačí</h2>
+
+  <p>Anthropic vydal doplněk Claude přímo pro Microsoft 365 - formou postranních panelů v Outlooku, Wordu, Excelu a PowerPointu. Na první pohled to zní jako přímá konkurence Copilotu. Při bližším pohledu je situace složitější.</p>
+
+  <p>Doplněk pro Outlook - postavený na modelu Claude Opus - umí číst e-maily a kalendář a pomoci s návrhem odpovědi. Odeslání, vytvoření nové zprávy nebo jakákoli akce v kalendáři ale musí uživatel dokončit sám, ručně. Nejde o agenta, ale o asistenta v postranním panelu.</p>
+
+  <p>Copilot v Outlooku mezitím umí přeplánovávat schůzky při kolizích, hromadně spravovat doručenou poštu nebo nastavovat komplexní pravidla pro inbox - a to vše jako součást kontextu celé organizace přes Work IQ. Není to srovnání kvality modelů, ale srovnání hloubky integrace.</p>
+
+  <!-- COMPARISON TABLE -->
+  <div style="margin: 32px 0; overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+      <thead>
+        <tr style="background: #1e3a5f; color: #fff;">
+          <th style="padding: 12px 16px; text-align: left; font-weight: 600;">Oblast</th>
+          <th style="padding: 12px 16px; text-align: left; font-weight: 600;">Copilot (nativní)</th>
+          <th style="padding: 12px 16px; text-align: left; font-weight: 600;">Claude doplněk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background: #f9fafb;">
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Integrace do M365</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Nativní, přímo v aplikaci</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Postranní panel přes API</td>
+        </tr>
+        <tr>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Akce v Outlooku</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Odesílání, plánování, inbox</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Čtení a návrh odpovědi</td>
+        </tr>
+        <tr style="background: #f9fafb;">
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">EU Data Boundary</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Ano (bez Anthropic modelů)</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Ne - vždy mimo EU</td>
+        </tr>
+        <tr>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">DLP, sensitivity labels</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">End-to-end</td>
+          <td style="padding: 11px 16px; border-bottom: 1px solid #e5e7eb;">Omezená viditelnost na API</td>
+        </tr>
+        <tr style="background: #f9fafb;">
+          <td style="padding: 11px 16px;">Cena</td>
+          <td style="padding: 11px 16px;">Součást M365 Copilot licence</td>
+          <td style="padding: 11px 16px;">Od 20 USD + spotřeba tokenů</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Zásadní věc z pohledu bezpečnosti: u nativního Copilotu zůstávají DLP politiky, sensitivity labels a audit logy plně pod kontrolou tenantu. U doplňku Claude přistupuje Anthropic k datům přes API - a co se s nimi děje po zpřístupnění, nástroje Microsoftu dále nesledují. Uchovávání dat se řídí politikami Anthropicu, nikoli konfigurací tenantu.</p>
+
+  <!-- SECTION 4 -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; color: #111;">Agent 365: jeden portál místo rozptýlené správy</h2>
+
+  <p>Kdybych měl vybrat jednu věc z tohoto souhrnu, která má nejpřímější dopad na IT administrátory zákazníků, je to konsolidace správy agentů do Agent 365.</p>
+
+  <p>Agentů v M365 přibývá rychle - z Copilot Studia, z různých integrací, od různých oddělení. Dotaz "kdo to vytvořil, k čemu má přístup a lze to auditovat?" byl donedávna legitimně obtížný. Starší rozhraní v Entra centru se vyřazují a veškerá správa se přesouvá do jednoho místa.</p>
+
+  <p>Agent 365 se stává centrálním místem pro vyhledávání, přehled, governance a zabezpečení všech agentů v rámci organizace. Administrátor nepotřebuje speciální licenci - stačí role AI Reader (doporučeno) nebo AI Administrator.</p>
+
+  <!-- STAT ROW -->
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; text-align: center;">
+    <div style="background: #f0f4ff; border-radius: 6px; padding: 20px 12px;">
+      <div style="font-size: 28px; font-weight: 700; color: #2563eb;">1</div>
+      <div style="font-size: 14px; color: #374151; margin-top: 4px;">centrální místo správy</div>
+    </div>
+    <div style="background: #f0f4ff; border-radius: 6px; padding: 20px 12px;">
+      <div style="font-size: 28px; font-weight: 700; color: #2563eb;">0</div>
+      <div style="font-size: 14px; color: #374151; margin-top: 4px;">speciálních licencí pro přehled</div>
+    </div>
+    <div style="background: #f0f4ff; border-radius: 6px; padding: 20px 12px;">
+      <div style="font-size: 28px; font-weight: 700; color: #2563eb;">bez limitu</div>
+      <div style="font-size: 14px; color: #374151; margin-top: 4px;">agentů pod kontrolou</div>
+    </div>
+  </div>
+
+  <p>V praxi to znamená, že IT konečně dostává nástroj, který odpovídá realitě - firma nemá jednoho agenta, ale desítky. A bez centrálního přehledu vzniká přesně ten typ chaosu, který jsme viděli u neřízených Teams kanálů. Tentokrát s vyšším rizikem, protože agenti mají přístup k datům a procesům.</p>
+
+  <!-- CLOSING -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 12px; color: #111;">Co z toho vyplývá pro partnery</h2>
+
+  <p>Flex routing, Anthropic modely, Claude doplněk - to nejsou témata, která bude každý zákazník sám aktivně řešit. Většina z nich se o tom dozví až ve chvíli, kdy něco udělají nebo se zeptají. Tím spíš je to příležitost pro proaktivní konverzaci.</p>
+
+  <p>Nejde o strašení. Jde o to být ten, kdo zákazníkovi vysvětlí rozdíl mezi tím, co je zapnuté ve výchozím stavu a co je třeba vědomě nastavit. Mezi tím, kde data zůstávají a kde se zpracovávají. A mezi tím, co vypadá jako konkurenční produkt a co je ve skutečnosti méně integrovaná alternativa.</p>
+
+  <p>Technické detaily jsou tady v roli prodejního argumentu - a to je přesně ta kombinace, která dává v partnerském prodeji smysl.</p>
+
+  <!-- CTA -->
+  <div style="background: #1e3a5f; color: #fff; border-radius: 6px; padding: 28px 30px; margin-top: 40px;">
+    <div style="font-size: 19px; font-weight: 700; margin-bottom: 10px;">Máte k těmto tématům otázky?</div>
+    <p style="margin: 0; font-size: 15px; opacity: 0.9;">Napište nám na <a href="mailto:microsoft.cz@tdsynnex.com" style="color: #93c5fd;">microsoft.cz@tdsynnex.com</a> - rádi projdeme konkrétní scénáře vašich zákazníků a pomůžeme nastavit správnou argumentaci.</p>
+  </div>
+
+</div></article>
+</main>
+<footer>TD SYNNEX Czech Republic &nbsp;·&nbsp; <a href="https://tdsynnexcz.github.io/">Přehled nástrojů</a></footer>
+</body>
+</html>
